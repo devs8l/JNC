@@ -47,7 +47,7 @@ const Home = () => {
                         <img
                             src="/hero.gif"
                             alt="Healthcare Professional with Patient"
-                            className="w-full h-full object-cover absolute top-10 left-0"
+                            className="w-full h-full object-cover absolute top-0 left-0"
                         />
                         {/* When you're ready to add the video, replace the img with: */}
                         {/* 
