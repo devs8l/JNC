@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'gil';
+  src: url(/fonts/Gilroy-Medium.ttf);
+}
+
+* {
+  font-family: 'gil', sans-serif;
+}
+
+.bg {
+  /* background: rgb(255, 255, 255); */
+  /* background: #ffffff67; */
+  background: rgb(178, 204, 255);
+  background: radial-gradient(circle, rgba(178, 204, 255, 0.216) 11%, rgba(0, 0, 0, 0.118) 100%);
+  backdrop-filter: blur(1400px)
+}
+
+.gray-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(237, 242, 248, 1) 30%);
+}
