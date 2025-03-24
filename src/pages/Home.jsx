@@ -4,83 +4,63 @@ import AboutJNC from '../components/AboutJNC'
 import Form from '../components/Form'
 import HeroBanner from '../components/HeroBanner'
 import Blogs from '../components/Blogs'
+import JncHover from '../components/JncHover'
 
 const Home = () => {
     return (
         <div>
             {/* // part1 */}
-            <div className="w-full flex gap-2 flex-col md:flex-row mt-5">
-                {/* Left Section - Blue background with text and buttons */}
-                <div className="w-full md:w-1/2 bg-blue-500 relative  flex  justify-center px-20 py-50 rounded-lg items-center">
-                    {/* Background Image with reduced opacity */}
-                    <div className="absolute inset-0 w-full h-full overflow-hidden">
+            <div className="w-full flex flex-col mt-5 px-6 sm:px-15 ">
+                {/* Top Section - Image */}
+                <div className="w-full  overflow-hidden">
+                    <div className="w-full h-[55vh] relative">
                         <img
-                            src="/hero-main.png"
-                            alt="Background Pattern"
-                            className="w-full h-full object-cover opacity-20"
+                            src="/doc-1.png"
+                            alt="Healthcare Professional with Patient"
+                            className="w-full object-cover h-full"
                         />
                     </div>
-    
-                    {/* Content */}
-                    <div className="relative z-10 max-w-md flex flex-col gap-4 ">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-tight mb-8">
-                            Empowering Healthcare<br />
-                            Through Intelligent<br />
-                            Innovation
+                </div>
+
+                {/* Bottom Section - Content */}
+                <div className="w-full bg-white py-15 flex flex-col md:flex-row justify-between">
+                    <div className="w-full">
+                        <h1 className="text-4xl md:text-5xl  text-gray-800 mb-4 leading-15">
+                            Redefining Healthcare<br />
+                            for a Healthier Tomorrow
                         </h1>
-    
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="bg-white text-blue-500 px-6 py-2 rounded text-sm font-medium hover:bg-gray-100 transition duration-200">
-                                Request Demo
-                            </button>
-                            <button className="bg-transparent border border-white text-white px-6 py-2 rounded text-sm font-medium hover:bg-white hover:bg-opacity-10 transition duration-200">
-                                Learn More
+
+                        <div className="mt-16">
+                            <button className="bg-gray-900 text-white px-6 py-3 rounded-xs text-sm font-medium hover:bg-gray-800 transition duration-200">
+                                Check MedCapilot
                             </button>
                         </div>
                     </div>
-                </div>
-    
-                {/* Right Section - Video/Image placeholder */}
-                <div className="w-full md:w-1/2 bg-gray-100 rounded-lg overflow-hidden">
-                    {/* This will be replaced with actual video */}
-                    <div className="w-full h-full min-h-[300px] md:min-h-full relative">
-                        <img
-                            src="/hero.gif"
-                            alt="Healthcare Professional with Patient"
-                            className="w-full h-full object-cover absolute top-0 left-0"
-                        />
-                        {/* When you're ready to add the video, replace the img with: */}
-                        {/* 
-                <video 
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source src="/your-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                */}
+
+                    <div className="md:w-2/3 mt-6 md:mt-0">
+                        <p className="text-gray-600 text-2xl">
+                            We're building a smarter, more connected healthcare ecosystem — combining advanced technologies and human-centered design to make care intelligent, accessible, and affordable across the globe.
+                        </p>
                     </div>
                 </div>
             </div>
-    
+
             {/* //part2 */}
-            <Hero/>
+            <Hero />
 
             {/* part3 */}
+            <JncHover />
+
             <AboutJNC/>
-
-
+            <Blogs />
             {/* part4 */}
-            <Form/>
+            <Form />
 
             {/* part5 */}
-            <HeroBanner/>
+            <HeroBanner />
 
             {/* part6 */}
 
-            <Blogs/>
         </div>
     )
 }

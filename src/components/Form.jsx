@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
     return (
-        <div className="flex flex-col md:flex-row w-full relative overflow-hidden rounded-lg bg-[#EDF2F8]">
+        <div className="flex flex-col md:flex-row w-[92%] mx-auto mt-14 relative overflow-hidden rounded-lg bg-[#EDF2F8] border-b-1 border-[#ffffff3c]">
             {/* Left side with image and gradient overlay */}
             <div className="absolute inset-0 w-full h-full top-0 left-30 gray-bg pointer-events-none z-1"></div>
             
@@ -12,7 +12,7 @@ const Form = () => {
                 <img
                     src="/jnc-form.png"
                     alt="Healthcare professional"
-                    className="object-cover h-full w-full scale-x-[-1] object-[80%]"
+                    className="object-cover h-full w-full  object-[20%]"
                 />
             </div>
 

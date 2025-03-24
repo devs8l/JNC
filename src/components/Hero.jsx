@@ -2,59 +2,52 @@ import React, { useState } from 'react'
 
 const Hero = () => {
     const [hoveredFeature, setHoveredFeature] = useState(null);
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <div className="w-full bg-[#121820] mt-5 rounded-lg overflow-hidden min-h-screen relative flex flex-col items-center">
-            <div className='bg w-full h-full absolute top-0 left-0'></div>
+        <div
+            className={`w-full ${isHovered ? 'bg-[#121820]' : 'bg-white'} mt-5  overflow-hidden min-h-screen relative flex flex-col items-center transition-colors duration-300`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             {/* Hero Section */}
-            <section className="w-full  rounded-lg relative flex gap-3 flex-col items-center p-6 md:p-15">
-
-                {/* New Product Tag */}
-                <div className="mb-6 z-10">
-                    <span className="bg-blue-500 text-white text-sm px-4 py-1 rounded-full">New Product</span>
-                </div>
-
-                {/* Heading */}
-                <h1 className="text-3xl md:text-4xl text-white text-center mb-4 mt-10 z-10">Meet Your AI-powered Medical Assistant</h1>
-
-                {/* Subheading */}
-                <p className="text-gray-400 text-center max-w-2xl mb-12 z-10">
-                    MedCopilot, our first groundbreaking product, streamlines patient data, provides insightful summaries, and enables doctors to spend more quality time with each patient.
-                </p>
-
-                {/* Product Interface Preview */}
-                <div className="bg-white rounded-xl mt-10 shadow-lg max-w-2xl w-full py-10 px-6 md:px-15 z-10">
-                    {/* Greeting */}
-                    <div className="text-center mb-4 w-full md:w-2/3 mx-auto">
-                        <h2 className="text-xl font-medium text-gray-800">Good Morning Dr. John!</h2>
-                        <p className="text-sm text-gray-500 mt-1">Ask a question or click on the prompts to get started</p>
+            <section className="w-[95%] flex flex-col md:flex-row py-20  px-2 justify-around items-center  border-t-1 border-[#ffffff3c] border-b-1 ">
+                {/* Left Content */}
+                <div className="w-full md:w-[35%] flex flex-col gap-8 justify-center md:pr-8">
+                    <div className="mb-4">
+                        <span className="bg-blue-500 text-white text-sm px-4 py-1 rounded-full">Our Product</span>
                     </div>
 
-                    {/* Prompt Buttons - 2x2 Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full md:w-3/4 mx-auto">
-                        <button className="border border-gray-300 rounded py-2 px-4 text-xs text-gray-700 hover:bg-gray-50 transition-colors text-center">
-                            Summary of my <br /> patients for today
-                        </button>
-                        <button className="border border-gray-300 rounded py-2 px-4 text-xs text-gray-700 hover:bg-gray-50 transition-colors text-center">
-                            Any missed appointments or cancellations today?
-                        </button>
-                        <button className="border border-gray-300 rounded py-2 px-4 text-xs text-gray-700 hover:bg-gray-50 transition-colors text-center">
-                            Which patients need urgent attention or follow-ups?
-                        </button>
-                        <button className="border border-gray-300 rounded py-2 px-4 text-xs text-gray-700 hover:bg-gray-50 transition-colors text-center">
-                            What patients should I be aware of today's patients?
+                    <h2 className={`text-3xl md:text-5xl  ${isHovered ? 'text-gray-100' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
+                        Meet MedCopilot<br />
+                        An AI Copilot for Doctors
+                    </h2>
+
+                    <p className={`${isHovered ? 'text-gray-300' : 'text-gray-700'} my-4 text-2xl w-[90%] transition-colors duration-300`}>
+                        Our first groundbreaking product, streamlines patient data, provides insightful summaries, and enables doctors to spend more quality time with each patient.
+                    </p>
+
+                    <div className="mt-4">
+                        <button className={`  px-16 py-3 rounded-xs text-sm font-medium  ${isHovered ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'} transition duration-200`}>
+                            Know More
                         </button>
                     </div>
                 </div>
 
-                {/* Footer Note */}
-                <p className="text-gray-500 text-sm mt-6 z-10">
-                    Glimpse of the product, actual interface may vary*
-                </p>
+                {/* Right Image */}
+                <div className="w-full md:w-[70%] overflow-hidden mt-6 md:mt-0 h-[50vh] md:h-[50vh] relative">
+                    <img
+                        src="/doc-1.png"
+                        alt="Doctor using MedCopilot on tablet"
+                        className="w-full h-full object-cover"
+                    />
+
+                </div>
             </section>
 
             {/* Key Benefits Section */}
-            <section className="w-full py-16 px-4 flex flex-col items-center z-1">
-                <h2 className="text-3xl text-white text-center mb-16">Key Benefits</h2>
+            <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1 border-b-1 border-[#ffffff3c] ">
+                <h2 className={`text-3xl ${isHovered ? 'text-white' : 'text-gray-800'} text-center mb-16 transition-colors duration-300`}>Key Benefits</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
                     {/* Efficiency */}
@@ -62,9 +55,9 @@ const Hero = () => {
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Efficiency.svg" alt="" />
                         </div>
-                        <h3 className="text-xl text-white mb-2">Efficiency</h3>
-                        <p className="text-gray-400 text-sm">
-                            Reduces consultation times by 10-15 minutes per patient.
+                        <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>Efficiency</h3>
+                        <p className={`${isHovered ? 'text-gray-400' : 'text-gray-600'} text-sm transition-colors duration-300 w-3/4`}>
+                            Reduces consultation times by <br />10-15 minutes per patient.
                         </p>
                     </div>
 
@@ -72,11 +65,10 @@ const Hero = () => {
                     <div className="flex flex-col items-center text-center">
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Insights.svg" alt="" />
-
                         </div>
-                        <h3 className="text-xl text-white mb-2">Insights</h3>
-                        <p className="text-gray-400 text-sm">
-                            Instant, effortless access to critical patient data.
+                        <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>Insights</h3>
+                        <p className={`${isHovered ? 'text-gray-400' : 'text-gray-600'} text-sm transition-colors duration-300 w-3/4`}>
+                            Instant, effortless access to <br /> critical patient data.
                         </p>
                     </div>
 
@@ -84,10 +76,9 @@ const Hero = () => {
                     <div className="flex flex-col items-center text-center">
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Interaction.svg" alt="" />
-
                         </div>
-                        <h3 className="text-xl text-white mb-2">Engagement</h3>
-                        <p className="text-gray-400 text-sm">
+                        <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>Engagement</h3>
+                        <p className={`${isHovered ? 'text-gray-400' : 'text-gray-600'} text-sm transition-colors duration-300 w-3/4`}>
                             Enhanced patient satisfaction and interactions.
                         </p>
                     </div>
@@ -95,58 +86,80 @@ const Hero = () => {
             </section>
 
             {/* How MedCopilot Works Section */}
-            <section className="w-full py-16 px-4 flex flex-col items-center z-1">
-                <h2 className="text-3xl text-white text-center mb-26">How MedCopilot Works</h2>
+            <section
+                className={`w-[95%] py-26 px-6 flex flex-col items-center z-1`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                <h2 className={`text-3xl ${isHovered ? 'text-white' : 'text-gray-800'} text-center mb-16 transition-colors duration-300`}>
+                    How MedCopilot Works
+                </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
                     {/* Integrate */}
-                    <div className="flex flex-col items-center text-center">
-                        <div
-                            className="w-32 h-32 mb-10 flex items-center justify-center transition-opacity duration-300"
-                            style={{ opacity: hoveredFeature === 'integrate' ? 1 : 0.5 }}
-                            onMouseEnter={() => setHoveredFeature('integrate')}
-                            onMouseLeave={() => setHoveredFeature(null)}
-                        >
-                            <img src="/hit-1.png" alt="" />
+                    <div
+                        className={`flex flex-col items-center justify-center text-center p-6 relative overflow-hidden rounded-lg ${isHovered ? 'bg-transparent' : 'bg-blue-100'} transition-colors duration-300 h-64`}
+                    >
+                        {/* Background pattern image - only visible when parent is hovered */}
+                        {isHovered && (
+                            <div
+                                className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
+                                style={{ backgroundImage: `url('/hit-1.png')` }}
+                            />
+                        )}
+
+                        <div className="relative z-10 flex flex-col items-center">
+                            <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
+                                Integrate
+                            </h3>
+                            <p className={`${isHovered ? 'text-gray-300' : 'text-gray-600'} text-center transition-colors duration-300`}>
+                                Connects seamlessly with <br /> existing EMRs.
+                            </p>
                         </div>
-                        <h3 className="text-xl text-white mb-2">Integrate</h3>
-                        <p className="text-gray-400 text-sm">
-                            Connects seamlessly with <br /> existing EMRs.
-                        </p>
                     </div>
 
                     {/* Analyze */}
-                    <div className="flex flex-col items-center text-center">
-                        <div
-                            className="w-32 h-32 mb-10 flex items-center justify-center transition-opacity duration-300"
-                            style={{ opacity: hoveredFeature === 'analyze' ? 1 : 0.5 }}
-                            onMouseEnter={() => setHoveredFeature('analyze')}
-                            onMouseLeave={() => setHoveredFeature(null)}
-                        >
-                            <img src="/hit-2.png" alt="" />
+                    <div
+                        className={`flex flex-col items-center justify-center text-center p-6 relative overflow-hidden rounded-lg ${isHovered ? 'bg-transparent' : 'bg-blue-100'} transition-colors duration-300 h-64`}
+                    >
+                        {/* Background pattern image - only visible when parent is hovered */}
+                        {isHovered && (
+                            <div
+                                className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
+                                style={{ backgroundImage: `url('/hit-2.png')`,filter: 'grayscale(100%)' }}
+                            />
+                        )}
 
+                        <div className="relative z-10 flex flex-col items-center">
+                            <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
+                                Analyze
+                            </h3>
+                            <p className={`${isHovered ? 'text-gray-300' : 'text-gray-600'} text-center transition-colors duration-300`}>
+                                AI processes patient histories, lab <br /> results, and past consultations.
+                            </p>
                         </div>
-                        <h3 className="text-xl text-white mb-2">Analyze</h3>
-                        <p className="text-gray-400 text-sm">
-                            AI processes patient histories, lab <br /> results, and past consultations.
-                        </p>
                     </div>
 
                     {/* Deliver */}
-                    <div className="flex flex-col items-center text-center">
-                        <div
-                            className="w-32 h-32 mb-10 flex items-center justify-center transition-opacity duration-300"
-                            style={{ opacity: hoveredFeature === 'deliver' ? 1 : 0.5 }}
-                            onMouseEnter={() => setHoveredFeature('deliver')}
-                            onMouseLeave={() => setHoveredFeature(null)}
-                        >
-                            <img src="/hit-3.png" alt="" />
+                    <div
+                        className={`flex flex-col items-center justify-center text-center p-6 relative overflow-hidden rounded-lg ${isHovered ? 'bg-transparent' : 'bg-blue-100'} transition-colors duration-300 h-64`}
+                    >
+                        {/* Background pattern image - only visible when parent is hovered */}
+                        {isHovered && (
+                            <div
+                                className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
+                                style={{ backgroundImage: `url('/hit-3.png')` , filter: 'grayscale(100%)' }}
+                            />
+                        )}
 
+                        <div className="relative z-10 flex flex-col items-center">
+                            <h3 className={`text-xl ${isHovered ? 'text-white' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
+                                Deliver
+                            </h3>
+                            <p className={`${isHovered ? 'text-gray-300' : 'text-gray-600'} text-center transition-colors duration-300`}>
+                                Provides concise and <br /> actionable insights.
+                            </p>
                         </div>
-                        <h3 className="text-xl text-white mb-2">Deliver</h3>
-                        <p className="text-gray-400 text-sm">
-                            Provides concise and <br /> actionable insights.
-                        </p>
                     </div>
                 </div>
             </section>

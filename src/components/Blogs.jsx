@@ -27,7 +27,7 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="w-full  py-8 md:py-12">
+        <div className="w-[95%] mx-auto   py-8 md:py-12 border-b-1 border-gray-300">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full">
                 {/* Section Heading */}
                 <h2 className="text-2xl md:text-3xl font-medium text-center mb-8 md:mb-12">
@@ -35,7 +35,7 @@ const Blogs = () => {
                 </h2>
 
                 {/* Blog Grid - Full Width */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-14">
                     {blogPosts.map((post) => (
                         <div key={post.id} className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
                             {/* Blog Image */}

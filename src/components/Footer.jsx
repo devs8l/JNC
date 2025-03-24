@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='grid mt-20 grid-cols-1 md:grid-cols-5 gap-y-8 md:gap-8 px-4 md:px-8 py-8 md:py-16 bg-white'>
+    <div className='grid mt-20 grid-cols-1 w-[95%] mx-auto md:grid-cols-5 gap-y-8 md:gap-8 px-4 md:px-8 py-8 md:py-16 bg-white sm:px-16'>
       {/* Logo - Always shows at top */}
       <div className='md:hidden w-16 h-auto mb-4'>
         <img src="/jnc.svg" alt="" />
@@ -82,22 +82,17 @@ const Footer = () => {
       {/* Company Section - Desktop */}
       <div className='hidden md:flex flex-col gap-4'>
         <h3 className='font-bold text-gray-800 mb-2'>Company</h3>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Company</a>
+        <a href="#" className='text-gray-600 hover:text-blue-500'>Home</a>
+        <a href="#" className='text-gray-600 hover:text-blue-500'>Medcopilot</a>
         <a href="#" className='text-gray-600 hover:text-blue-500'>Blog</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Resources</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Careers</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Privacy Policy</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>DPA</a>
         <a href="#" className='text-gray-600 hover:text-blue-500'>Contact Us</a>
       </div>
 
       {/* Solutions Section - Desktop Only */}
       <div className='hidden md:flex flex-col gap-4'>
-        <h3 className='font-bold text-gray-800 mb-2'>Solutions</h3>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Cloud Migration</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Gen-AI Solutions</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Security Solutions</a>
-        <a href="#" className='text-gray-600 hover:text-blue-500'>Application Modernization</a>
+        <h3 className='font-bold text-gray-800 mb-2'>Useful Links</h3>
+        <a href="#" className='text-gray-600 hover:text-blue-500'>Privacy Policy</a>
+
       </div>
 
       {/* Follow Us Section - Desktop */}
@@ -126,8 +121,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className='col-span-1 md:col-span-5 mt-4 md:mt-8 text-center text-blue-500 text-xs md:text-base'>
-        @2025 MedCopilot
+      <div className='col-span-1 md:col-span-5 mt-4 md:mt-8 text-left text-gray-500 font-semibold text-xs md:text-base'>
+        @2025 JNC Tech
       </div>
     </div>
   )
