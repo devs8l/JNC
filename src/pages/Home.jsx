@@ -13,11 +13,14 @@ const Home = () => {
             <div className="w-full flex flex-col mt-5 px-6 sm:px-15 ">
                 {/* Top Section - Image */}
                 <div className="w-full  overflow-hidden">
-                    <div className="w-full h-[55vh] relative">
-                        <img
-                            src="/doc-1.png"
-                            alt="Healthcare Professional with Patient"
-                            className="w-full object-cover h-full"
+                    <div className="w-full h-[60vh] relative">
+                        <video
+                            src="/jnc-hero.mp4"
+                            className="w-full h-full  object-cover object-[0%_40%]"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
                         />
                     </div>
                 </div>
@@ -51,7 +54,7 @@ const Home = () => {
             {/* part3 */}
             <JncHover />
 
-            <AboutJNC/>
+            <AboutJNC />
             <Blogs />
             {/* part4 */}
             <Form />

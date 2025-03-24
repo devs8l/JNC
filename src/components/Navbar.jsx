@@ -27,7 +27,7 @@ const Navbar = () => {
         
         {/* Contact Us Button */}
         <div className="hidden md:block">
-          <button className="bg-gray-900 text-white px-4 py-2 rounded text-sm font-medium">
+          <button className="bg-gray-900 text-white px-4 py-2 rounded-xs text-sm font-medium">
             Contact Us
           </button>
         </div>

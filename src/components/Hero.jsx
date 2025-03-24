@@ -1,24 +1,23 @@
 import React, { useState } from 'react'
 
 const Hero = () => {
-    const [hoveredFeature, setHoveredFeature] = useState(null);
     const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div
-            className={`w-full ${isHovered ? 'bg-[#121820]' : 'bg-white'} mt-5  overflow-hidden min-h-screen relative flex flex-col items-center transition-colors duration-300`}
+            className={`w-full ${isHovered ? 'bg-[#121820]' : 'bg-white'} mt-5 overflow-hidden min-h-screen relative flex flex-col items-center transition-colors duration-300`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* Hero Section */}
-            <section className="w-[95%] flex flex-col md:flex-row py-20  px-2 justify-around items-center  border-t-1 border-[#ffffff3c] border-b-1 ">
+            <section className="w-[95%] flex flex-col md:flex-row py-20 px-2 justify-around items-center border-t-1 border-[#ffffff3c] border-b-1">
                 {/* Left Content */}
                 <div className="w-full md:w-[35%] flex flex-col gap-8 justify-center md:pr-8">
                     <div className="mb-4">
                         <span className="bg-blue-500 text-white text-sm px-4 py-1 rounded-full">Our Product</span>
                     </div>
 
-                    <h2 className={`text-3xl md:text-5xl  ${isHovered ? 'text-gray-100' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
+                    <h2 className={`text-3xl md:text-5xl ${isHovered ? 'text-gray-100' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
                         Meet MedCopilot<br />
                         An AI Copilot for Doctors
                     </h2>
@@ -28,7 +27,7 @@ const Hero = () => {
                     </p>
 
                     <div className="mt-4">
-                        <button className={`  px-16 py-3 rounded-xs text-sm font-medium  ${isHovered ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'} transition duration-200`}>
+                        <button className={`px-16 py-3 rounded-xs text-sm font-medium ${isHovered ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'} transition duration-200`}>
                             Know More
                         </button>
                     </div>
@@ -41,12 +40,11 @@ const Hero = () => {
                         alt="Doctor using MedCopilot on tablet"
                         className="w-full h-full object-cover"
                     />
-
                 </div>
             </section>
 
             {/* Key Benefits Section */}
-            <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1 border-b-1 border-[#ffffff3c] ">
+            <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1 border-b-1 border-[#ffffff3c]">
                 <h2 className={`text-3xl ${isHovered ? 'text-white' : 'text-gray-800'} text-center mb-16 transition-colors duration-300`}>Key Benefits</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
@@ -86,11 +84,7 @@ const Hero = () => {
             </section>
 
             {/* How MedCopilot Works Section */}
-            <section
-                className={`w-[95%] py-26 px-6 flex flex-col items-center z-1`}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
+            <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1">
                 <h2 className={`text-3xl ${isHovered ? 'text-white' : 'text-gray-800'} text-center mb-16 transition-colors duration-300`}>
                     How MedCopilot Works
                 </h2>
@@ -126,7 +120,7 @@ const Hero = () => {
                         {isHovered && (
                             <div
                                 className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
-                                style={{ backgroundImage: `url('/hit-2.png')`,filter: 'grayscale(100%)' }}
+                                style={{ backgroundImage: `url('/hit-2.png')`, filter: 'grayscale(100%)' }}
                             />
                         )}
 
@@ -148,7 +142,7 @@ const Hero = () => {
                         {isHovered && (
                             <div
                                 className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
-                                style={{ backgroundImage: `url('/hit-3.png')` , filter: 'grayscale(100%)' }}
+                                style={{ backgroundImage: `url('/hit-3.png')`, filter: 'grayscale(100%)' }}
                             />
                         )}
 

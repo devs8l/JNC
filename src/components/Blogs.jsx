@@ -37,8 +37,8 @@ const Blogs = () => {
                 {/* Blog Grid - Full Width */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-14">
                     {blogPosts.map((post) => (
-                        <div key={post.id} className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                            {/* Blog Image */}
+                        <div key={post.id} className="flex flex-col bg-white border-1 overflow-hidden border-gray-100 duration-300">
+                            
                             <div className="h-48 sm:h-56 overflow-hidden">
                                 <img
                                     src={post.image}

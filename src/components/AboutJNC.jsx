@@ -3,9 +3,6 @@ import React from 'react';
 const AboutJNC = () => {
   return (
     <div className=" w-[90%] mx-auto border-b-1 border-gray-300 mb-8">
-      {/* About JNC Tech Section */}
-
-
 
       {/* Our Values Section */}
       <div className="  px-16 py-10 pb-20 mb-10 border-b-1 border-gray-300">
@@ -50,7 +47,7 @@ const AboutJNC = () => {
           {/* Patient-centricity */}
           <div className="flex flex-col items-center text-center">
             <div className="mb-4">
-              <img src="/patient.svg" alt="" />
+              <img src="/patients.svg" alt="" />
             </div>
             <h4 className="font-semibold text-lg mb-2">Patient-centricity</h4>
             <p className="text-sm text-gray-600 w-2/3 mt-2">

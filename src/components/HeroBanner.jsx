@@ -2,12 +2,15 @@ import React from 'react';
 
 const HeroBanner = () => {
   return (
-    <div className="relative w-full h-10 sm:h-190 mt-15  overflow-hidden object-contain">
+    <div className="relative w-full h-[60vh] sm:h-[70vh] mt-15  overflow-hidden object-contain">
       {/* Background Image */}
-      <img
-        src="/doc-1.png"
-        alt="Healthcare professional"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+      <video
+        src="/jnc-banner.mp4"
+        className="w-full h-full  object-cover sm:object-[0%_10%] object-[10%_10%]"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
 
       {/* Dark Overlay */}
