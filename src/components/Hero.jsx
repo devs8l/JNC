@@ -1,32 +1,41 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Hero = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(window.innerWidth < 640);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsHovered(window.innerWidth < 640);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <div
             className={`w-full ${isHovered ? 'bg-[#121820]' : 'bg-white'} mt-5 overflow-hidden min-h-screen relative flex flex-col items-center transition-colors duration-300`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => window.innerWidth >= 640 && setIsHovered(true)}
+            onMouseLeave={() => window.innerWidth >= 640 && setIsHovered(false)}
         >
             {/* Hero Section */}
             <section className="w-[95%] flex flex-col md:flex-row py-20 px-2 justify-around items-center border-t-1 border-[#ffffff3c] border-b-1">
                 {/* Left Content */}
-                <div className="w-full md:w-[35%] flex flex-col gap-8 justify-center md:pr-8">
+                <div className="w-full sm:w-[35%] flex flex-col gap-8 justify-center md:pr-8">
                     <div className="mb-4">
                         <span className="bg-blue-500 text-white text-sm px-4 py-1 rounded-full">Our Product</span>
                     </div>
 
                     <h2 className={`text-3xl md:text-5xl ${isHovered ? 'text-gray-100' : 'text-gray-800'} mb-2 transition-colors duration-300`}>
-                        Meet MedCopilot<br />
-                        An AI Copilot for Doctors
+                        <span className="block sm:inline">Meet MedCopilot</span>{' '}
+                        <span className="block sm:inline">An AI Copilot for Doctors</span>
                     </h2>
 
-                    <p className={`${isHovered ? 'text-gray-300' : 'text-gray-700'} my-4 text-2xl w-[90%] transition-colors duration-300`}>
+                    <p className={`${isHovered ? 'text-gray-300' : 'text-gray-700'} my-4 text-xl sm:text-2xl w-full sm:w-[90%] transition-colors duration-300`}>
                         Our first groundbreaking product, streamlines patient data, provides insightful summaries, and enables doctors to spend more quality time with each patient.
                     </p>
 
-                    <div className="mt-4">
+                    <div className="mt-4 hidden sm:block">
                         <button className={`px-16 py-3 rounded-xs text-sm font-medium ${isHovered ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'} transition duration-200`}>
                             Know More
                         </button>
@@ -40,6 +49,12 @@ const Hero = () => {
                         alt="Doctor using MedCopilot on tablet"
                         className="w-full h-full object-cover"
                     />
+                </div>
+
+                <div className="w-full mt-4 sm:hidden">
+                    <button className={`w-full py-3 rounded-xs text-sm font-medium ${isHovered ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'} transition duration-200`}>
+                        Know More
+                    </button>
                 </div>
             </section>
 

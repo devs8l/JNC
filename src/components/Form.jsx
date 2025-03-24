@@ -2,22 +2,30 @@ import React from 'react';
 
 const Form = () => {
     return (
-        <div className="flex flex-col md:flex-row w-[92%] mx-auto mt-14 relative overflow-hidden rounded-lg bg-[#EDF2F8] border-b-1 border-[#ffffff3c]">
-            {/* Left side with image and gradient overlay */}
-            <div className="absolute inset-0 w-full h-full top-0 left-30 gray-bg pointer-events-none z-1"></div>
+        <div className="flex flex-col md:flex-row sm:w-[92%] w-full mx-auto mt-14 relative overflow-hidden rounded-lg bg-white sm:bg-[#EDF2F8] border-b-1 border-[#ffffff3c]">
+            {/* Gradient overlay - Only for desktop */}
+            <div className="hidden md:block absolute inset-0 w-full h-full top-0 left-30 gray-bg pointer-events-none z-1"></div>
             
-            {/* Image section - Hidden on small screens, visible on md and up */}
-            <div className="hidden md:block relative md:w-1/2 bg-[#EDF2F8] rounded-lg overflow-hidden">
-                {/* Doctor image */}
+            {/* Image section - Visible on all screens, but with different behavior */}
+            <div className="block md:hidden w-full bg-[#EDF2F8]  overflow-hidden">
                 <img
                     src="/jnc-form.png"
                     alt="Healthcare professional"
-                    className="object-cover h-full w-full  object-[20%]"
+                    className="object-cover w-full h-auto object-[20%]"
+                />
+            </div>
+
+            {/* Image section - Hidden on small screens, visible on md and up */}
+            <div className="hidden md:block relative  md:w-1/2 bg-[#EDF2F8] rounded-lg overflow-hidden">
+                <img
+                    src="/jnc-form.png"
+                    alt="Healthcare professional"
+                    className="object-cover h-full  sm:w-full object-[20%]"
                 />
             </div>
 
             {/* Right side with form */}
-            <div className="w-full md:w-3/4 p-4 sm:p-6 md:p-12 flex flex-col z-2">
+            <div className="w-full md:w-3/4 p-8 sm:p-6 md:p-12 flex flex-col z-2">
                 <h1 className="text-2xl sm:text-3xl text-left mb-4 sm:mb-8">Contact Us</h1>
 
                 <form className="flex flex-col space-y-6 sm:space-y-8 md:space-y-10 z-2">
