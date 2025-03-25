@@ -50,7 +50,7 @@ const Footer = () => {
           <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Careers</a>
           <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Privacy Policy</a>
           <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>DPA</a>
-          <button href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Contact Us</button>
+          <button href="#" className='text-gray-600 hover:text-blue-500 text-sm w-2/3 text-left'>Contact Us</button>
         </div>
         
         {/* Follow Us Section - Mobile */}
