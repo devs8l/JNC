@@ -16,8 +16,8 @@ const AboutJNC = () => {
             <div className="mb-8">
               <img src="/heart.svg" alt="" />
             </div>
-            <h4 className=" text-lg mb-2">Transparency</h4>
-            <p className="text-sm text-gray-600 w-2/3 mt-2">
+            <h4 className=" text-xl mb-2">Transparency</h4>
+            <p className="text-md text-gray-600 w-2/3 mt-2">
               Clear, open communication <br /> in all interactions.
             </p>
           </div>
@@ -27,8 +27,8 @@ const AboutJNC = () => {
             <div className="mb-8">
               <img src="/security.svg" alt="" />
             </div>
-            <h4 className=" text-lg mb-2">Security</h4>
-            <p className="text-sm text-gray-600 w-2/3 mt-2">
+            <h4 className=" text-xl mb-2">Security</h4>
+            <p className="text-md text-gray-600 w-2/3 mt-2">
               Ensuring strict data <br /> protection and privacy.
             </p>
           </div>
@@ -38,8 +38,8 @@ const AboutJNC = () => {
             <div className="mb-8">
               <img src="/bulb.svg" alt="" />
             </div>
-            <h4 className=" text-lg mb-2">Innovation</h4>
-            <p className="text-sm text-gray-600 w-2/3 mt-2">
+            <h4 className=" text-xl mb-2">Innovation</h4>
+            <p className="text-md text-gray-600 w-2/3 mt-2">
               Continuously advancing healthcare with cutting-edge technology.
             </p>
           </div>

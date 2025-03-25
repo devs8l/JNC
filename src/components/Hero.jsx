@@ -63,7 +63,7 @@ const Hero = () => {
 
             // Product tag animation
             tl.to(animationTargets.productTag, {
-                backgroundColor: "#3B82F6",
+                // backgroundColor: "#3B82F6",
                 color: "#ffffff",
                 duration: 1
             }, 0)
@@ -71,9 +71,9 @@ const Hero = () => {
             // Background images animation
             tl.to(animationTargets.backgroundImages, {
                 opacity: 0.3,
-                filter: "grayscale(100%)",
+                // filter: "grayscale(100%)",
                 duration: 1,
-                background:"00000041"
+                // background:"00000041"
             }, 0)
 
             // Slightly dim images
@@ -95,14 +95,14 @@ const Hero = () => {
             {/* Hero Section */}
             <section className="w-[95%] flex flex-col md:flex-row py-20 px-2 justify-around items-center border-t-1 border-[#ffffff3c] border-b-1">
                 {/* Left Content */}
-                <div className="w-full sm:w-[35%] flex flex-col gap-8 justify-center md:pr-8">
+                <div className="w-full sm:w-[40%] flex flex-col gap-8 justify-center md:pr-8">
                     <div className="mb-4">
                         <span className="bg-blue-500 text-white text-sm px-4 py-1 rounded-full">Our Product</span>
                     </div>
 
                     <h2 className="text-3xl md:text-5xl text-gray-800 mb-2 transition-colors duration-300">
-                        <span className="block sm:inline">Meet MedCopilot</span>{' '}
-                        <span className="block sm:inline">An AI Copilot for Doctors</span>
+                        <span className="block sm:inline">Meet MedCopilot <br /> An AI Copilot for Doctors</span>
+                        {/* <span className="block sm:inline"></span> */}
                     </h2>
 
                     <p className="text-gray-700 my-4 text-xl sm:text-xl w-full sm:w-[90%] transition-colors duration-300">
@@ -134,7 +134,7 @@ const Hero = () => {
 
             {/* Key Benefits Section */}
             <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1 border-b-1 border-[#ffffff3c]">
-                <h2 className="text-3xl text-gray-800 text-center mb-16 transition-colors duration-300">Key Benefits</h2>
+                <h2 className="text-5xl text-gray-800 text-center mb-16 transition-colors duration-300">Key Benefits</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl ">
                     {/* Efficiency */}

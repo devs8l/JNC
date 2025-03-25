@@ -17,9 +17,9 @@ const Navbar = () => {
         
         {/* Desktop Navigation - Middle Links */}
         <div className="hidden md:flex items-center space-x-8 ml-15">
-          <a href="/" className="text-gray-800 font-medium text-md">Home</a>
-          <a href="/medcopilot" className="text-gray-800 font-medium text-md">MedCopilot</a>
-          <a href="/blogs" className="text-gray-800 font-medium text-md">Blog</a>
+          <a href="/" className="text-gray-800 font-medium text-md hover:text-primary">Home</a>
+          <a href="/medcopilot" className="text-gray-800 font-medium text-md hover:text-primary">MedCopilot</a>
+          <a href="/blogs" className="text-gray-800 font-medium text-md hover:text-primary">Blog</a>
         </div>
         
         {/* Empty space to push Contact Us to far right */}

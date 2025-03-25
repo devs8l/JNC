@@ -38,7 +38,7 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <div className="mt-16">
+                        <div className="mt-10">
                             <button className="bg-primary rounded-sm  text-white w-full sm:w-1/4 sm:px-6 sm:py-3 py-5  text-sm font-medium hover:bg-gray-800 transition duration-200">
                                 Check MedCopilot
                             </button>
