@@ -70,7 +70,7 @@ const Home = () => {
                 <Hero />
             </div>
             <div className=" w-[95%] mx-auto p-10 text-center mt-10 mb-10 flex flex-col gap-14 border- border-gray-300">
-                <h3 className="text-5xl text-blue-500 font-medium  mx-auto">
+                <h3 className="text-3xl sm:text-5xl text-blue-500 font-medium  mx-auto">
                     All solutions are HIPAA compliant and regulated.
                 </h3>
                 <div className='flex w-full mx-auto items-center justify-center gap-4'>
