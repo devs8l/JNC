@@ -55,14 +55,28 @@ const Home = () => {
 
             {/* //part2 */}
             <Hero />
-
+            <div className=" w-[95%] mx-auto p-10 text-center mt-10 mb-10 flex flex-col gap-14 border- border-gray-300">
+                <h3 className="text-5xl text-blue-500 font-medium  mx-auto">
+                    All solutions are HIPAA compliant and regulated.
+                </h3>
+                <div className='flex w-full mx-auto items-center justify-center gap-4'>
+                    <div className='flex flex-col items-center'>
+                        <img src="/foot-1.png" alt="HIPAA" className='h-20 w-auto' />
+                        {/* <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span> */}
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <img src="/foot-2.png" alt="HL7 FHIR" className='h-20 w-auto filter grayscale' />
+                        {/* <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span> */}
+                    </div>
+                </div>
+            </div>
             {/* part3 */}
             <JncHover />
 
             <AboutJNC />
-            <Blogs />
+            {/* <Blogs /> */}
             {/* part4 */}
-            <Form />
+            {/* <Form /> */}
 
             {/* part5 */}
             <HeroBanner />

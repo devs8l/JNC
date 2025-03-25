@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Med from './pages/Med'; // Import your Med component
 import Footer from './components/Footer';
+import TallyForm from './components/TallyForm';
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
     <Router>
       <div className=''>
         <Navbar />
+        {/* <TallyForm/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/medcopilot" element={<Med />} />

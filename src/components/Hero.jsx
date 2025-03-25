@@ -34,17 +34,17 @@ const Hero = () => {
 
             // Animate specific elements within the container
             const animationTargets = {
-                backgroundImages: container.querySelectorAll('[style*="background-image"]'),
-                headings: container.querySelectorAll('h2, h3'),
+                backgroundImages: container.querySelectorAll('ds'),
+                headings: container.querySelectorAll('span'),
                 paragraphs: container.querySelectorAll('p'),
                 buttons: container.querySelectorAll('button'),
                 productTag: container.querySelector('.bg-blue-500'),
-                images: container.querySelectorAll('img')
+                images: container.querySelectorAll('gfd')
             }
 
             // Text color animation
             tl.to(animationTargets.headings, {
-                color: "#ffffff",
+                color: "white",
                 duration: 1
             }, 0)
 
@@ -134,16 +134,16 @@ const Hero = () => {
 
             {/* Key Benefits Section */}
             <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1 border-b-1 border-[#ffffff3c]">
-                <h2 className="text-5xl text-gray-800 text-center mb-16 transition-colors duration-300">Key Benefits</h2>
+                <h2 className="text-5xl text-white text-center mb-16 transition-colors duration-300">Key Benefits</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl ">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full  ">
                     {/* Efficiency */}
                     <div className="flex flex-col items-center text-center  sm:border-r-1 border-[#ffffff3c] ">
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Efficiency.svg" alt="" />
                         </div>
-                        <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">Efficiency</h3>
-                        <p className="text-gray-600 text-sm transition-colors duration-300 w-3/4">
+                        <h3 className="text-2xl text-white mb-2 transition-colors duration-300">Efficiency</h3>
+                        <p className="text-gray-600 text-lg transition-colors duration-300 w-3/4">
                             Reduces consultation times by <br />10-15 minutes per patient.
                         </p>
                     </div>
@@ -153,8 +153,8 @@ const Hero = () => {
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Insights.svg" alt="" />
                         </div>
-                        <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">Insights</h3>
-                        <p className="text-gray-600 text-sm transition-colors duration-300 w-3/4">
+                        <h3 className="text-2xl text-white mb-2 transition-colors duration-300">Insights</h3>
+                        <p className="text-gray-600 text-lg transition-colors duration-300 w-3/4">
                             Instant, effortless access to <br /> critical patient data.
                         </p>
                     </div>
@@ -164,8 +164,8 @@ const Hero = () => {
                         <div className="w-16 h-16 mb-6 flex items-center justify-center">
                             <img src="/Interaction.svg" alt="" />
                         </div>
-                        <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">Engagement</h3>
-                        <p className="text-gray-600 text-sm transition-colors duration-300 w-3/4">
+                        <h3 className="text-2xl text-white mb-2 transition-colors duration-300">Engagement</h3>
+                        <p className="text-gray-600 text-lg transition-colors duration-300 w-3/4">
                             Enhanced patient satisfaction and interactions.
                         </p>
                     </div>
@@ -174,26 +174,27 @@ const Hero = () => {
 
             {/* How MedCopilot Works Section */}
             <section className="w-[95%] py-26 px-6 flex flex-col items-center z-1">
-                <h2 className="text-3xl text-gray-800 text-center mb-16 transition-colors duration-300">
+                <h2 className="text-5xl text-white text-center mb-16 transition-colors duration-300">
                     How MedCopilot Works
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full ">
                     {/* Integrate */}
                     <div
                         className="flex flex-col items-center justify-center text-center p-6 relative overflow-hidden rounded-lg bg-blue-100 transition-colors duration-300 h-64"
                     >
                         {/* Background pattern image - only visible when parent is animated */}
                         <div
-                            className="absolute inset-0 bg-cover bg-center opacity-0 z-0"
+                            className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
                             style={{ backgroundImage: `url('/hit-1.png')` }}
                         />
+                        <div className='w-full h-full bg-[#00000058] absolute'></div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">
+                            <h3 className="text-2xl text-white mb-2 transition-colors duration-300">
                                 Integrate
                             </h3>
-                            <p className="text-gray-600 text-center transition-colors duration-300">
+                            <p className="text-gray-800 text-center text-lg transition-colors duration-300">
                                 Connects seamlessly with <br /> existing EMRs.
                             </p>
                         </div>
@@ -205,15 +206,16 @@ const Hero = () => {
                     >
                         {/* Background pattern image - only visible when parent is animated */}
                         <div
-                            className="absolute inset-0 bg-cover bg-center opacity-0 z-0"
+                            className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
                             style={{ 
                                 backgroundImage: `url('/hit-2.png')`, 
-                                filter: 'grayscale(100%)' 
+                                 filter: "grayscale(50%)"
                             }}
                         />
+                        <div className='w-full h-full bg-[#00000058] absolute'></div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">
+                            <h3 className="text-2xl text-white mb-2 transition-colors duration-300">
                                 Analyze
                             </h3>
                             <p className="text-gray-600 text-center transition-colors duration-300">
@@ -228,18 +230,20 @@ const Hero = () => {
                     >
                         {/* Background pattern image - only visible when parent is animated */}
                         <div
-                            className="absolute inset-0 bg-cover bg-center opacity-0 z-0"
+                            className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
                             style={{ 
                                 backgroundImage: `url('/hit-3.png')`, 
-                                filter: 'grayscale(100%)' 
+                                
+                                
                             }}
                         />
+                        <div className='w-full h-full bg-[#00000058] absolute'></div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h3 className="text-xl text-gray-800 mb-2 transition-colors duration-300">
+                            <h3 className="text-2xl text-white mb-2 transition-colors duration-300">
                                 Deliver
                             </h3>
-                            <p className="text-gray-600 text-center transition-colors duration-300">
+                            <p className="text-gray-600 text-center text-lg transition-colors duration-300">
                                 Provides concise and <br /> actionable insights.
                             </p>
                         </div>
