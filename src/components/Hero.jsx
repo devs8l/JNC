@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useNavigate } from 'react-router-dom'
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
@@ -8,10 +9,11 @@ gsap.registerPlugin(ScrollTrigger)
 const Hero = () => {
     // Create a ref for the main container
     const heroContainerRef = useRef(null)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const container = heroContainerRef.current
-        
+
         // Create a context for easy cleanup
         const ctx = gsap.context(() => {
             // Create timeline for scroll-based animation
@@ -21,7 +23,7 @@ const Hero = () => {
                     start: "top 50%",
                     end: "top 50%",
                     scrub: true,
-                    
+
                 }
             })
 
@@ -88,7 +90,7 @@ const Hero = () => {
     }, [])
 
     return (
-        <div 
+        <div
             ref={heroContainerRef}
             className="w-full bg-white mt-5 overflow-hidden min-h-screen relative flex flex-col items-center transition-colors duration-300"
         >
@@ -110,9 +112,12 @@ const Hero = () => {
                     </p>
 
                     <div className="mt-4 hidden sm:block">
-                        <button className="px-16 py-3 rounded-xs text-sm font-medium bg-gray-900 text-white transition duration-200">
-                            Know More
-                        </button>
+                        <a
+                            href="/medcopilot"
+                            className="inline-block w-full sm:w-1/3 py-3 rounded-xs text-sm font-medium bg-white text-black hover:bg-primary hover:text-white transition-colors duration-200 text-center"
+                        >
+                            Check Medcopilot
+                        </a>
                     </div>
                 </div>
 
@@ -207,9 +212,9 @@ const Hero = () => {
                         {/* Background pattern image - only visible when parent is animated */}
                         <div
                             className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
-                            style={{ 
-                                backgroundImage: `url('/hit-2.png')`, 
-                                 filter: "grayscale(50%)"
+                            style={{
+                                backgroundImage: `url('/hit-2.png')`,
+                                filter: "grayscale(50%)"
                             }}
                         />
                         <div className='w-full h-full bg-[#00000058] absolute'></div>
@@ -231,10 +236,10 @@ const Hero = () => {
                         {/* Background pattern image - only visible when parent is animated */}
                         <div
                             className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
-                            style={{ 
-                                backgroundImage: `url('/hit-3.png')`, 
-                                
-                                
+                            style={{
+                                backgroundImage: `url('/hit-3.png')`,
+
+
                             }}
                         />
                         <div className='w-full h-full bg-[#00000058] absolute'></div>

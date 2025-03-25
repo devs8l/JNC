@@ -60,7 +60,7 @@ const Med = () => {
                 <div className='flex flex-col justify-center items-center gap-4 md:gap-9 relative z-10 px-4 md:px-0'>
                     <h1 className='text-primary-text w-[80%] md:w-full text-2xl md:text-4xl lg:text-5xl font-medium text-center'>Revolutionize patient care with MedCoPilot</h1>
                     <h3 className='text-sec-text text-base md:text-lg mb-4 md:mb-8 text-center'>Your AI-Powered Clinical Assistant</h3>
-                    <button onClick={openDemoForm} className='bg-sec-btn text-white py-2 md:py-3 px-6 md:px-8 rounded-sm'>Request Demo</button>
+                    <button onClick={openDemoForm} className='bg-sec-btn text-white py-2 md:py-3 px-6 md:px-8 rounded-sm cursor-pointer'>Request Demo</button>
                 </div>
             </div>
 
@@ -81,29 +81,38 @@ const Med = () => {
             </div>
 
             {/* part3 */}
-            <div className="flex justify-between flex-col items-center p-4 md:p-10 mt-5 z-20 gap-5 bg-[#fffffff8] rounded-3xl">
-                <h1 className="text-primary-text text-2xl md:text-4xl font-medium text-center">Challenges in typical documentation setting</h1>
+            <div className="flex justify-between flex-col items-center p-4 md:p-15 mt-5 z-20 gap-5 bg-[#fffffff8] rounded-3xl">
+                <h1 className="text-primary-text text-2xl md:text-4xl font-medium text-center">Challenges in Patient Care</h1>
                 <div className="flex flex-col md:flex-row gap-6 md:gap-10 mt-5 md:mt-10">
                     <div className="w-full md:w-1/3 p-4 md:p-5 flex flex-col gap-4 md:gap-6">
                         <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
                             <img src="/img-1.png" alt="Documentation Burden" className="w-full h-full object-contain" />
                         </div>
-                        <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Documentation Burden</h4>
-                        <p className="text-center md:text-center">Studies show similar AI scribe tools save physicians an average of one hour per day on paperwork.</p>
+                        <h4 className="text-lg md:text-2xl font-medium text-center md:text-center">Delayed Turnaround</h4>
+                        <p className="text-sec-text text-center md:text-center">Extended patient turnaround
+                            times, decreasing patient
+                            satisfaction and care
+                            delivery efficiency.</p>
                     </div>
                     <div className="w-full md:w-1/3 p-4 md:p-5 flex flex-col gap-4 md:gap-6">
                         <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
                             <img src="/img-2.png" alt="Information Overload" className="w-full h-full object-contain" />
                         </div>
-                        <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Information Overload</h4>
-                        <p className="text-center md:text-center">Quickly access and synthesize critical patient data from across your hospital systems.</p>
+                        <h4 className="text-lg md:text-2xl font-medium text-center md:text-center">Information Overload</h4>
+                        <p className="text-sec-text text-center md:text-center">High cognitive overload,
+                            hindering timely,
+                            informed clinical
+                            decisions.</p>
                     </div>
                     <div className="w-full md:w-1/3 p-4 md:p-5 flex flex-col gap-4 md:gap-6">
                         <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
                             <img src="/img-3.png" alt="Missed Insights" className="w-full h-full object-contain" />
                         </div>
-                        <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Missed Insights</h4>
-                        <p className="text-center md:text-center">Leverage AI-powered analysis to uncover potential diagnoses and next steps you might otherwise overlook.</p>
+                        <h4 className="text-lg md:text-2xl font-medium text-center md:text-center">Missed Insights</h4>
+                        <p className="text-sec-text text-center md:text-center">Inefficient access to
+                            historical patient trends,
+                            limiting proactive and
+                            personalized care.</p>
                     </div>
                 </div>
             </div>
@@ -200,9 +209,9 @@ const Med = () => {
                 <img src="/hero-main.png" className='absolute w-full h-full object-cover opacity-30' alt="" />
                 <div className='flex flex-col gap-5 md:gap-10 z-20 justify-center items-center px-4'>
                     <div className='flex flex-col gap-8 md:gap-5 items-center justify-center'>
-                        <h1 className='text-white text-2xl md:text-4xl text-center'>Ready to Experience the <br className='hidden md:block' /> Power of MediCoPilot?</h1>
-                        <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-center'>Request a demo today and discover how <br className='hidden md:block' /> MediCoPilot can transform your practice.</h3>
-                        <button className='px-5 py-2 text-sm bg-white text-[#2f85f7] rounded-sm mt-2 md:mt-0'>Request Demo</button>
+                        <h1 className='text-white text-2xl md:text-4xl text-center'>Ready to Experience the <br className='hidden md:block' /> Power of MediCopilot?</h1>
+                        <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-center'>Request a demo today and discover how <br className='hidden md:block' /> MediCopilot can transform your practice.</h3>
+                        <button onClick={openDemoForm} className='px-5 py-2 text-sm bg-white text-[#2f85f7] rounded-sm mt-2 md:mt-0 cursor-pointer'>Request Demo</button>
                     </div>
                 </div>
             </div>

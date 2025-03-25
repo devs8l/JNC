@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Hero from '../components/Hero'
 import AboutJNC from '../components/AboutJNC'
 import Form from '../components/Form'
@@ -7,6 +7,18 @@ import Blogs from '../components/Blogs'
 import JncHover from '../components/JncHover'
 
 const Home = () => {
+
+    const heroRef = useRef(null);
+
+    // Scroll to Hero function
+    const scrollToHero = () => {
+        if (heroRef.current) {
+            heroRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
     return (
         <div>
             {/* // part1 */}
@@ -39,8 +51,8 @@ const Home = () => {
                         </div>
 
                         <div className="mt-10">
-                            <button className="bg-primary rounded-sm  text-white w-full sm:w-1/4 sm:px-6 sm:py-3 py-5  text-sm font-medium hover:bg-gray-800 transition duration-200">
-                                Check MedCopilot
+                            <button onClick={scrollToHero} className="bg-primary rounded-sm  text-white w-full sm:w-1/6 sm:px-2 sm:py-3 py-5  text-sm font-medium hover:bg-gray-800 transition duration-200">
+                                Learn More
                             </button>
                         </div>
                     </div>
@@ -54,7 +66,9 @@ const Home = () => {
             </div>
 
             {/* //part2 */}
-            <Hero />
+            <div ref={heroRef}>
+                <Hero />
+            </div>
             <div className=" w-[95%] mx-auto p-10 text-center mt-10 mb-10 flex flex-col gap-14 border- border-gray-300">
                 <h3 className="text-5xl text-blue-500 font-medium  mx-auto">
                     All solutions are HIPAA compliant and regulated.
