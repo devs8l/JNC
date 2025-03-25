@@ -37,9 +37,9 @@ const Blogs = () => {
                 {/* Blog Grid - Full Width */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-14">
                     {blogPosts.map((post) => (
-                        <div key={post.id} className="flex flex-col bg-white border-1 overflow-hidden border-gray-100 duration-300">
+                        <div key={post.id} className="flex flex-col bg-white overflow-hidden  duration-300">
                             
-                            <div className="h-48 sm:h-56 overflow-hidden">
+                            <div className="h-48 sm:h-56 overflow-hidden rounded-xl">
                                 <img
                                     src={post.image}
                                     alt={post.title}
@@ -48,7 +48,7 @@ const Blogs = () => {
                             </div>
 
                             {/* Blog Content */}
-                            <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                            <div className="py-4 sm:py-6 flex flex-col flex-grow">
                                 <h3 className="font-medium text-lg mb-2">{post.title}</h3>
                                 <p className="text-gray-600 text-sm mb-4 flex-grow">{post.description}</p>
                                 <a

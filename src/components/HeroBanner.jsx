@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroBanner = () => {
   return (
-    <div className="relative w-full h-[80vh] sm:h-[70vh] mt-15  overflow-hidden object-contain">
+    <div className="relative w-full h-[80vh] sm:h-[90vh] mt-15  overflow-hidden object-contain">
       {/* Background Image */}
       <video
         src="/jnc-banner.mp4"

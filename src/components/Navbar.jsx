@@ -17,9 +17,9 @@ const Navbar = () => {
         
         {/* Desktop Navigation - Middle Links */}
         <div className="hidden md:flex items-center space-x-8 ml-15">
-          <a href="#" className="text-gray-800 font-medium text-md">Home</a>
-          <a href="#" className="text-gray-800 font-medium text-md">MedCopilot</a>
-          <a href="#" className="text-gray-800 font-medium text-md">Blog</a>
+          <a href="/" className="text-gray-800 font-medium text-md">Home</a>
+          <a href="/medcopilot" className="text-gray-800 font-medium text-md">MedCopilot</a>
+          <a href="/blogs" className="text-gray-800 font-medium text-md">Blog</a>
         </div>
         
         {/* Empty space to push Contact Us to far right */}
@@ -27,7 +27,7 @@ const Navbar = () => {
         
         {/* Contact Us Button */}
         <div className="hidden md:block">
-          <button className="bg-gray-900 text-white px-4 py-2 rounded-xs text-sm font-medium">
+          <button className="bg-primary rounded-sm text-white px-6 py-2  text-sm font-medium">
             Contact Us
           </button>
         </div>
@@ -59,10 +59,10 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4 px-2">
           <div className="flex flex-col space-y-4 pt-2 pb-3">
-            <a href="#" className="text-gray-800 font-medium text-sm block py-2">Home</a>
-            <a href="#" className="text-gray-800 font-medium text-sm block py-2">MedCopilot</a>
-            <a href="#" className="text-gray-800 font-medium text-sm block py-2">Blog</a>
-            <button className="bg-gray-900 text-white px-4 py-2 rounded text-sm font-medium w-full mt-2">
+            <a href="/" className="text-gray-800 font-medium text-sm block py-2">Home</a>
+            <a href="/medcopilot" className="text-gray-800 font-medium text-sm block py-2">MedCopilot</a>
+            <a href="/blogs" className="text-gray-800 font-medium text-sm block py-2">Blog</a>
+            <button className="bg-primary rounded-sm  text-white px-4 py-2  text-sm font-medium w-full mt-2">
               Contact Us
             </button>
           </div>

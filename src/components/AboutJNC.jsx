@@ -13,10 +13,10 @@ const AboutJNC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Transparency */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-8">
               <img src="/heart.svg" alt="" />
             </div>
-            <h4 className="font-semibold text-lg mb-2">Transparency</h4>
+            <h4 className=" text-lg mb-2">Transparency</h4>
             <p className="text-sm text-gray-600 w-2/3 mt-2">
               Clear, open communication <br /> in all interactions.
             </p>
@@ -24,10 +24,10 @@ const AboutJNC = () => {
 
           {/* Security */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-8">
               <img src="/security.svg" alt="" />
             </div>
-            <h4 className="font-semibold text-lg mb-2">Security</h4>
+            <h4 className=" text-lg mb-2">Security</h4>
             <p className="text-sm text-gray-600 w-2/3 mt-2">
               Ensuring strict data <br /> protection and privacy.
             </p>
@@ -35,10 +35,10 @@ const AboutJNC = () => {
 
           {/* Innovation */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-8">
               <img src="/bulb.svg" alt="" />
             </div>
-            <h4 className="font-semibold text-lg mb-2">Innovation</h4>
+            <h4 className=" text-lg mb-2">Innovation</h4>
             <p className="text-sm text-gray-600 w-2/3 mt-2">
               Continuously advancing healthcare with cutting-edge technology.
             </p>
@@ -49,7 +49,7 @@ const AboutJNC = () => {
             <div className="mb-4">
               <img src="/patients.svg" alt="" />
             </div>
-            <h4 className="font-semibold text-lg mb-2">Patient-centricity</h4>
+            <h4 className=" text-lg mb-2">Patient-centricity</h4>
             <p className="text-sm text-gray-600 w-2/3 mt-2">
               Focused solutions that enhance patient experiences and outcomes.
             </p>

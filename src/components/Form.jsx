@@ -16,7 +16,7 @@ const Form = () => {
             </div>
 
             {/* Image section - Hidden on small screens, visible on md and up */}
-            <div className="hidden md:block relative  md:w-1/2 bg-[#EDF2F8] rounded-lg overflow-hidden">
+            <div className="hidden md:block relative  md:w-1/2 bg-[#EDF2F8]  overflow-hidden">
                 <img
                     src="/jnc-form.png"
                     alt="Healthcare professional"

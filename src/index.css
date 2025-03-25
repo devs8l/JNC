@@ -21,3 +21,24 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(237, 242, 248, 1) 30%);
 }
+
+@theme {
+  --color-primary: #1A73E8;
+  --color-primary-btn: #222836;
+  --color-sec-btn: #1A73E8;
+  --color-primary-text: #222836;
+  --color-sec-text: #191d249d;
+
+}
+
+.grad {
+  background: rgb(146, 199, 237);
+  background: radial-gradient(circle, #b2ccff98 68%, rgba(255, 255, 255, 1) 90%);
+  backdrop-filter: blur(1400px)
+}
+
+
+.card-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7399334733893557) 39%, rgba(253, 253, 254, 0.0984768907563025) 89%);
+}
