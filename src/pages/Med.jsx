@@ -58,22 +58,22 @@ const Med = () => {
             <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
               <img src="/img-1.png" alt="Documentation Burden" className="w-full h-full object-contain" />
             </div>
-            <h4 className="text-lg md:text-xl font-medium text-center md:text-left">Documentation Burden</h4>
-            <p className="text-center md:text-left">Studies show similar AI scribe tools save physicians an average of one hour per day on paperwork.</p>
+            <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Documentation Burden</h4>
+            <p className="text-center md:text-center">Studies show similar AI scribe tools save physicians an average of one hour per day on paperwork.</p>
           </div>
           <div className="w-full md:w-1/3 p-4 md:p-5 flex flex-col gap-4 md:gap-6">
             <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
               <img src="/img-2.png" alt="Information Overload" className="w-full h-full object-contain" />
             </div>
-            <h4 className="text-lg md:text-xl font-medium text-center md:text-left">Information Overload</h4>
-            <p className="text-center md:text-left">Quickly access and synthesize critical patient data from across your hospital systems.</p>
+            <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Information Overload</h4>
+            <p className="text-center md:text-center">Quickly access and synthesize critical patient data from across your hospital systems.</p>
           </div>
           <div className="w-full md:w-1/3 p-4 md:p-5 flex flex-col gap-4 md:gap-6">
             <div className="aspect-square w-full max-w-[300px] h-[300px] mx-auto flex items-center justify-center">
               <img src="/img-3.png" alt="Missed Insights" className="w-full h-full object-contain" />
             </div>
-            <h4 className="text-lg md:text-xl font-medium text-center md:text-left">Missed Insights</h4>
-            <p className="text-center md:text-left">Leverage AI-powered analysis to uncover potential diagnoses and next steps you might otherwise overlook.</p>
+            <h4 className="text-lg md:text-xl font-medium text-center md:text-center">Missed Insights</h4>
+            <p className="text-center md:text-center">Leverage AI-powered analysis to uncover potential diagnoses and next steps you might otherwise overlook.</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ const Med = () => {
                   <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-left'>Instantly access and summarize <br className='hidden md:block' /> patient data, including diagnoses,<br className='hidden md:block' /> medications, labs, and imaging.</h3>
                 </div>
               </div>
-              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-12  md:py-0 md:h-full rounded-3xl'>
+              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-12  md:py-0 md:h-full '>
                 <div className='h-full w-full md:w-full md:h-[100%] overflow-hidden rounded-xl z-20 px-4 md:px-0'>
                   <img className='w-full h-full overflow-hidden rounded-sm object-contain' src="/col-1.png" alt="" />
                 </div>
@@ -125,7 +125,7 @@ const Med = () => {
                   <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-left'>Instantly access and summarize <br className='hidden md:block' /> patient data, including diagnoses,<br className='hidden md:block' /> medications, labs, and imaging.</h3>
                 </div>
               </div>
-              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-10 md:py-0 md:h-full rounded-3xl'>
+              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-10 md:py-0 md:h-full '>
                 <div className='w-full md:w-full h-full md:h-[100%] overflow-hidden rounded-xl z-20 px-4 md:px-0'>
                   <img src="/col-2.png" className='w-full h-full object-contain ' alt="" />
                 </div>
@@ -151,7 +151,7 @@ const Med = () => {
                   <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-left'>Leverage AI to analyze both historical <br className='hidden md:block' /> records and real-time inputs for pattern <br className='hidden md:block' />detection and informed decisions.</h3>
                 </div>
               </div>
-              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-12 md:py-0 md:h-full rounded-3xl'>
+              <div className='card-bg w-full md:w-1/2 flex justify-center items-center p-12 md:py-0 md:h-full '>
                 <div className='w-full md:w-full h-full md:h-[100%] overflow-hidden rounded-xl z-20 px-4 md:px-0'>
                   <img src="/col-3.png" className='w-full h-full object-contain' alt="" />
                 </div>

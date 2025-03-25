@@ -46,11 +46,11 @@ const AboutJNC = () => {
 
           {/* Patient-centricity */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-8">
               <img src="/patients.svg" alt="" />
             </div>
             <h4 className=" text-lg mb-2">Patient-centricity</h4>
-            <p className="text-sm text-gray-600 w-2/3 mt-2">
+            <p className="text-md text-gray-600 w-2/3 mt-2">
               Focused solutions that enhance patient experiences and outcomes.
             </p>
           </div>
