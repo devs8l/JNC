@@ -17,7 +17,7 @@ const AboutJNC = () => {
               <img src="/heart.svg" alt="" />
             </div>
             <h4 className=" text-2xl mb-2">Transparency</h4>
-            <p className="text-lg text-gray-600 w-1/2 mt-2">
+            <p className="text-lg text-gray-600 sm:w-1/2 w-2/3 mt-2">
               Clear, open communication <br /> in all interactions.
             </p>
           </div>
@@ -28,7 +28,7 @@ const AboutJNC = () => {
               <img src="/security.svg" alt="" />
             </div>
             <h4 className=" text-2xl mb-2">Security</h4>
-            <p className="text-lg text-gray-600 w-1/2 mt-2">
+            <p className="text-lg text-gray-600 sm:w-1/2 w-[80%] mt-2">
               Ensuring strict data <br /> protection and privacy.
             </p>
           </div>
@@ -39,7 +39,7 @@ const AboutJNC = () => {
               <img src="/bulb.svg" alt="" />
             </div>
             <h4 className=" text-2xl mb-2">Innovation</h4>
-            <p className="text-lg text-gray-600 w-2/3 mt-2">
+            <p className="text-lg text-gray-600 sm:w-1/2 w-[95%] mt-2">
               Continuously advancing healthcare with cutting-edge technology.
             </p>
           </div>
@@ -50,7 +50,7 @@ const AboutJNC = () => {
               <img src="/patients.svg" alt="" />
             </div>
             <h4 className=" text-2xl mb-2">Patient-centricity</h4>
-            <p className="text-lg text-gray-600 w-[80%] mt-2">
+            <p className="text-lg text-gray-600 sm:w-[80%] w-[100%] mt-2">  
               Focused solutions that enhance patient experiences and outcomes.
             </p>
           </div>
