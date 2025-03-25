@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='grid mt-20 grid-cols-1 w-[95%] mx-auto md:grid-cols-5 gap-y-8 md:gap-8 px-4 md:px-8 py-8 md:py-16 bg-white sm:px-16'>
+    <div className='grid mt-20 grid-cols-1 w-[90%] mx-auto md:grid-cols-5 gap-y-8 md:gap-10 px-4 md:px-8 py-8 md:py-0 bg-white sm:px-16'>
       {/* Logo - Always shows at top */}
       <div className='md:hidden w-16 h-auto mb-4'>
         <img src="/jnc.svg" alt="" />
@@ -52,11 +52,11 @@ const Footer = () => {
       <div className='md:hidden flex gap-6 mt-8 justify-center'>
         <div className='flex flex-col items-center'>
           <img src="/foot-1.png" alt="HIPAA" className='h-12 w-auto' />
-          <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span>
+          {/* <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span> */}
         </div>
         <div className='flex flex-col items-center'>
           <img src="/foot-2.png" alt="HL7 FHIR" className='h-12 w-auto filter grayscale' />
-          <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span>
+          {/* <span className='text-xs text-gray-500 mt-1'>(Coming soon)</span> */}
         </div>
       </div>
 
@@ -66,15 +66,15 @@ const Footer = () => {
         <div className='w-20 h-20'>
           <img src="/jnc.svg" alt="" />
         </div>
-        <h3 className='text-sec-text font-medium text-xl'>Certificates</h3>
-        <div className='flex gap-6 mt-2'>
+        {/* <h3 className='text-sec-text font-medium text-xl'>Certificates</h3> */}
+        <div className='flex gap-1 mt-2 ml-[-10px]'>
           <div className='flex flex-col items-center'>
             <img src="/foot-1.png" alt="HIPAA" className='h-15 w-auto' />
-            <span className='text-xs text-gray-500 mt-2'>(Coming soon)</span>
+            {/* <span className='text-xs text-gray-500 mt-2'>(Coming soon)</span> */}
           </div>
           <div className='flex flex-col items-center'>
             <img src="/foot-2.png" alt="HL7 FHIR" className='h-15 w-auto filter grayscale' />
-            <span className='text-xs text-gray-500 mt-2'>(Coming soon)</span>
+            {/* <span className='text-xs text-gray-500 mt-2'>(Coming soon)</span> */}
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className='col-span-1 md:col-span-5 mt-4 md:mt-8 text-left text-gray-500 font-semibold text-xs md:text-base'>
+      <div className='col-span-1 md:col-span-5 mt-4 md:mt-2 mb-8 text-center text-gray-500 font-semibold text-xs md:text-base'>
         @2025 JNC Tech
       </div>
     </div>
