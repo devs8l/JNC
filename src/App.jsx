@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Lenis from 'lenis'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -6,15 +7,27 @@ import Med from './pages/Med'; // Import your Med component
 import Footer from './components/Footer';
 
 const App = () => {
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration:1.5
+    });
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+  })
   return (
     <Router>
       <div className=''>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/medcopilot" element={<Med/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/medcopilot" element={<Med />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
