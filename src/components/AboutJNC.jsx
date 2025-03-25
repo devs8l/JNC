@@ -6,7 +6,7 @@ const AboutJNC = () => {
 
       {/* Our Values Section */}
       <div className="  px-16 py-10  ">
-        <h3 className="text-3xl sm:text-5xltext-center  text-gray-700 mb-25">
+        <h3 className="text-3xl sm:text-5xl text-center  text-gray-700 mb-25">
           Our Values
         </h3>
 
