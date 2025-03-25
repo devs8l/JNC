@@ -58,7 +58,7 @@ const Med = () => {
             <div className='w-full h-[80vh] z-10 rounded-3xl overflow-hidden flex flex-col items-center justify-center relative bg-white'>
                 <img src="/hero-main.png" className='opacity-60 object-cover w-full h-full absolute' alt="" />
                 <div className='flex flex-col justify-center items-center gap-4 md:gap-9 relative z-10 px-4 md:px-0'>
-                    <h1 className='text-primary-text w-[80%] md:w-full text-2xl md:text-4xl lg:text-5xl font-medium text-center'>Revolutionize patient care with MedCoPilot</h1>
+                    <h1 className='text-primary-text w-[80%] md:w-full text-2xl md:text-4xl lg:text-5xl font-medium text-center'>Revolutionize Patient Care with MedCopilot</h1>
                     <h3 className='text-sec-text text-base md:text-lg mb-4 md:mb-8 text-center'>Your AI-Powered Clinical Assistant</h3>
                     <button onClick={openDemoForm} className='bg-sec-btn text-white py-2 md:py-3 px-6 md:px-8 rounded-sm cursor-pointer'>Request Demo</button>
                 </div>
@@ -71,7 +71,7 @@ const Med = () => {
                 <div className='flex flex-col w-full md:w-1/2 md:p-4 p-10 md:h-[90%] text-center md:text-start h-full mt-5 md:px-8 lg:px-20 justify-center gap-3 md:gap-5 bg-[#FFFFFF99] md:rounded-4xl rounded-t-4xl'>
                     <h1 className='text-primary-text text-2xl md:text-4xl lg:text-5xl font-medium'>Reclaim Your Time,<br />
                         Enhance Patient Care</h1>
-                    <h3 className='text-sec-text text-base md:text-lg mb-4 md:mb-8'>Empowering Physicians with AI-Driven Efficiency,<br className='hidden md:block' /> Insightful Support, and Seamless Integration.</h3>
+                    <h3 className='text-sec-text text-base md:text-lg mb-4 md:mb-8'>Empowering Doctors with AI-Driven Efficiency,<br className='hidden md:block' /> Insightful Support, and Seamless Integration.</h3>
                 </div>
                 <img
                     src={isMobile ? "/med-doc-1.png" : "/hero-2.png"}
