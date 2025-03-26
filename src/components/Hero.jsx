@@ -131,9 +131,12 @@ const Hero = () => {
                 </div>
 
                 <div className="w-full mt-4 sm:hidden">
-                    <button className="w-full py-3 rounded-xs text-sm font-medium bg-gray-900 text-white transition duration-200">
-                        Know More
-                    </button>
+                    <a
+                        href="/medcopilot"
+                        className="inline-block w-full sm:w-1/3 py-3 rounded-xs text-sm font-medium bg-white text-black hover:bg-primary hover:text-white transition-colors duration-200 text-center"
+                    >
+                        Check Medcopilot
+                    </a>
                 </div>
             </section>
 
