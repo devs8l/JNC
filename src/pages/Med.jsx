@@ -209,7 +209,7 @@ const Med = () => {
                 <img src="/hero-main.png" className='absolute w-full h-full object-cover opacity-30' alt="" />
                 <div className='flex flex-col gap-5 md:gap-10 z-20 justify-center items-center px-4'>
                     <div className='flex flex-col gap-8 md:gap-5 items-center justify-center'>
-                        <h1 className='text-white text-2xl md:text-4xl text-center'>Ready to Experience the <br className='hidden md:block' /> Power of MediCopilot?</h1>
+                        <h1 className='text-white text-2xl md:text-4xl text-center'>Ready to Experience the <br className='hidden md:block' /> Power of MedCopilot?</h1>
                         <h3 className='text-[#FFFFFFCC] text-sm md:text-md text-center'>Request a demo today and discover how <br className='hidden md:block' /> MediCopilot can transform your practice.</h3>
                         <button onClick={openDemoForm} className='px-5 py-2 text-sm bg-white text-[#2f85f7] rounded-sm mt-2 md:mt-0 cursor-pointer'>Request Demo</button>
                     </div>
