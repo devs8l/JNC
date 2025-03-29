@@ -44,13 +44,12 @@ const Footer = () => {
         {/* Company Section - Mobile */}
         <div className='flex flex-col gap-3'>
           <h3 className='font-medium text-gray-800 mb-2'>Company</h3>
-          <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Company</a>
+          {/* <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Company</a> */}
           {/* <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Blog</a> */}
-          <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Resources</a>
-          <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Careers</a>
-          <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>Privacy Policy</a>
-          <a href="#" className='text-gray-600 hover:text-blue-500 text-sm'>DPA</a>
-          <button href="#" className='text-gray-600 hover:text-blue-500 text-sm w-2/3 text-left'>Contact Us</button>
+          <a href="#" className='text-gray-600 hover:text-blue-500'>Home</a>
+          <a href="/medcopilot" className='text-gray-600 hover:text-blue-500'>MedCopilot</a>
+          {/* <a href="#" className='text-gray-600 hover:text-blue-500'>Blog</a> */}
+          <button href="#" onClick={openContactForm} className='text-gray-600 hover:text-blue-500 w-2/3 text-left cursor-pointer'>Contact Us</button>
         </div>
 
         {/* Follow Us Section - Mobile */}
