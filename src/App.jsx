@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Med from './pages/Med'; // Import your Med component
 import Footer from './components/Footer';
 import TallyForm from './components/TallyForm';
+import Services from './pages/Services';
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/medcopilot" element={<Med />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
         <Footer />
       </div>

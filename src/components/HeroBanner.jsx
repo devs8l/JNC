@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const HeroBanner = () => {
+const HeroBanner = ({heading,cta}) => {
   const formId = 'wA9vdy'; // Your Tally form ID
 
   // Load Tally script
@@ -52,12 +52,11 @@ const HeroBanner = () => {
 
         </div>
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium text-center px-4 z-10 w-full sm:w-1/3 mx-auto">
-          Let’s Build The Future Of
-          Healthcare Together
+          {heading}
         </h2>
 
         <button onClick={openContactForm} className='bg-primary rounded-sm text-white px-6 py-2 z-1'>
-          Contact us
+          {cta}
         </button>
       </div>
     </div>
