@@ -2,10 +2,10 @@ import React from 'react';
 
 const ServiceHero = () => {
   return (
-    <div className="w-full py-12 px-6 sm:px-16">
+    <div className="w-full py-12  sm:px-16">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5">
         {/* Left content */}
-        <div className="w-full md:w-[40%] space-y-6">
+        <div className="w-full md:w-[40%] space-y-6 px-6 md:px-0">
           <h1 className="text-4xl md:text-5xl  text-gray-800 leading-tight">
             Bringing technology
             <br />
@@ -34,7 +34,7 @@ const ServiceHero = () => {
           <img 
             src="/ser-hero.png" 
             alt="Mother and child smiling together"
-            className="w-full h-full rounded-lg object-cover shadow-md object-[60%_10%] ]"
+            className="w-full h-full md:rounded-lg object-cover shadow-md object-[60%_10%] ]"
           />
         </div>
       </div>

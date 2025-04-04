@@ -2,19 +2,19 @@ import React from 'react';
 
 const Serve = () => {
   return (
-    <div className="w-[95%] py-12 px-6 sm:px-16 mx-auto border-b border-gray-300">
+    <div className="md:w-[95%] py-12 sm:px-16 mx-auto border-b border-gray-300">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12 ">
         {/* Left image */}
         <div className="w-full md:w-1/2 h-full ">
           <img 
             src="/ser-2.png" 
             alt="Healthcare professional with headset at computer"
-            className="w-full h-full rounded-lg object-cover"
+            className="w-full h-full md:rounded-lg object-cover"
           />
         </div>
         
         {/* Right content */}
-        <div className="w-full md:w-1/2 space-y-6 h-full">
+        <div className="w-full px-6 md:px-0 md:w-1/2 space-y-6 h-full">
           {/* Blue pill button */}
           <div className="flex mb-12">
             <button className="bg-blue-500 text-white py-1 px-6 rounded-full font-medium">

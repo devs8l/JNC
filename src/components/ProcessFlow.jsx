@@ -8,14 +8,14 @@ const ProcessFlow = () => {
       <div className="border-t border-gray-200 mb-12"></div>
       
       {/* How It Works button */}
-      <div className="flex justify-center mb-6">
+      <div className="flex md:justify-center mb-6">
         <button className="bg-blue-500 text-white px-6 py-2 rounded-full font-medium">
           How It Works
         </button>
       </div>
       
       {/* Title */}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-16 text-gray-800">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl md:text-center mb-16 text-gray-800">
         End-to-End in Just 30 Days
       </h2>
       
