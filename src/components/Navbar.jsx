@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8 ml-15">
           <a href="/" className="text-gray-800 font-medium text-md hover:text-primary">Home</a>
           <a href="/medcopilot" className="text-gray-800 font-medium text-md hover:text-primary">MedCopilot</a>
-          <a href="/services" className="text-gray-800 font-medium text-md hover:text-primary">Services</a>
+          {/* <a href="/services" className="text-gray-800 font-medium text-md hover:text-primary">Services</a> */}
           {/* <a href="/blogs" className="text-gray-800 font-medium text-md hover:text-primary">Blog</a> */}
         </div>
 
@@ -94,7 +94,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4 pt-2 pb-3">
             <a href="/" className="text-gray-800 font-medium text-sm block py-2">Home</a>
             <a href="/medcopilot" className="text-gray-800 font-medium text-sm block py-2">MedCopilot</a>
-            <a href="/services" className="text-gray-800 font-medium text-sm block py-2">Services</a>
+            {/* <a href="/services" className="text-gray-800 font-medium text-sm block py-2">Services</a> */}
             {/* <a href="/blogs" className="text-gray-800 font-medium text-sm block py-2">Blog</a> */}
             <button onClick={openContactForm} className="bg-primary rounded-sm  text-white px-4 py-2  text-sm font-medium w-1/3 mt-2">
               Contact Us

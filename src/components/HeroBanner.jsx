@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const HeroBanner = ({heading,cta}) => {
+const HeroBanner = ({heading,cta,video}) => {
   const formId = 'wA9vdy'; // Your Tally form ID
 
   // Load Tally script
@@ -35,7 +35,7 @@ const HeroBanner = ({heading,cta}) => {
     <div className="relative w-full h-[80vh] sm:h-[90vh] mt-15  overflow-hidden object-contain">
       {/* Background Image */}
       <video
-        src="/jnc-banner.mp4"
+        src={video}
         className="w-full sm:h-full h-[120%]  sm:scale-[1] object-cover sm:object-[0%_10%] object-[45%_0%]"
         autoPlay
         loop

@@ -16,7 +16,7 @@ const Services = () => {
             <HealthcareServices/>
             <ProcessFlow/>
             <Trust/>
-            <HeroBanner heading={"Let’s Get You Modernized"} cta={"Book your Audit Now"}/>
+            <HeroBanner heading={"Let’s Get You Modernized"} cta={"Book your Audit Now"} video={"/jnc-ser-banner.mp4"}/>
         </div>
     )
 }

@@ -93,7 +93,7 @@ const Home = () => {
             {/* <Form /> */}
 
             {/* part5 */}
-            <HeroBanner heading={"Let’s Build The Future Of Healthcare Together"} cta={"Contact us"}/>
+            <HeroBanner heading={"Let’s Build The Future Of Healthcare Together"} cta={"Contact us"} video={"/jnc-banner.mp4"}/>
 
             {/* part6 */}
 

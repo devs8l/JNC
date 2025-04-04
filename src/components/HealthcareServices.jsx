@@ -7,12 +7,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HealthcareCard = ({ card, index }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center my-20">
-      <div className="w-full md:w-2/5 p-4">
-        <img src={card.image} alt={card.title} className="w-full h-auto object-contain" />
+    <div className="flex flex-col md:flex-row items-center my-20 gap-20">
+      <div className="w-full md:w-[45%]  h-[60vh] rounded-md overflow-hidden bg-[#003ECB]">
+        <img src={card.image} alt={card.title} className="w-full h-full object-contain" />
       </div>
       
-      <div className="w-full md:w-3/4 p-3">
+      <div className="w-full md:w-[55%] p-3">
         <h2 className="text-3xl md:text-4xl lg:text-5xl  mb-14 card-title">
           {card.title}
         </h2>
@@ -62,7 +62,7 @@ const HealthcareServices = () => {
     {
       title: "Web & Patient Portal Development",
       description: "Your website is the digital front door. Your portals are the operational core. We make both seamless.",
-      image: "/web-portal-icon.svg", // Replace with your actual image path
+      image: "/stack-2.png", // Replace with your actual image path
       features: [
         "Custom hospital & clinic systems",
         "Patient registration, appointment booking flows",
@@ -217,7 +217,7 @@ const HealthcareServices = () => {
         </div>
 
         {/* Cards Section */}
-        <div className='w-[80%] mx-auto'>
+        <div className='w-[90%] mx-auto'>
           {cards.map((card, index) => (
             <HealthcareCard key={index} card={card} index={index} />
           ))}
