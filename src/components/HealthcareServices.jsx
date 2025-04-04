@@ -206,11 +206,11 @@ const HealthcareServices = () => {
         duration: 0.3,
         ease: 'power1.in'
       });
-      gsap.to('.nav-div', {
-        backgroundColor: '#121820',
-        duration: 0.3,
-        ease: 'power1.in'
-      });
+      // gsap.to('.nav-div', {
+      //   backgroundColor: '#121820',
+      //   duration: 0.3,
+      //   ease: 'power1.in'
+      // });
       gsap.to('.header-title', {
         color: '#ffffff',
         duration: 0.3,
@@ -320,7 +320,7 @@ const HealthcareServices = () => {
 
         {/* Desktop Navigation Tabs */}
         {!isMobileCardOpen && (
-          <div ref={navRef} className="hidden md:block sticky top-0 z-[10] bg-white nav-div">
+          <div ref={navRef} className="hidden md:block sticky top-0 z-[10] bg-[transparent] nav-div">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-wrap justify-center gap-2 py-4">
                 {cards.map((card, index) => (
