@@ -10,34 +10,29 @@ const CompanyValue = () => {
             Why JNC Tech
           </button>
         </div>
-        
+
         {/* Main headings */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl  mb-4">
-            You Don't Need to Build a Tech Team.
+            Making Hospitals Ready to Deliver
           </h2>
           <h2 className="text-3xl md:text-4xl lg:text-5xl ">
-            You Just Need the <span className="text-blue-500">Right Tech Partner</span>.
+            Better, Faster <span className="text-blue-500">Care</span>.
           </h2>
         </div>
-        
+
         {/* Description paragraphs */}
-        <div className="text-center mx-auto md:text-xl text-gray-600 max-w-2xl">
+        <div className="text-center mx-auto md:text-xl text-gray-600 max-w-3xl">
           <p className="mb-8">
-            Most healthcare providers are stuck between outdated systems
-            and overpromising tech vendors. Building in-house takes too long.
-            Hiring CTOs costs a fortune. And most software teams don't
-            understand healthcare.
+            Modernizing your hospital shouldn’t feel like a black box. We’ve seen leaders stuck with outdated infra, rising tech costs, and no clear path forward.
           </p>
-          
+
           <p>
-            That's why JNC Tech exists — a ready-made tech arm for hospitals,
-            clinics, and healthtech startups. We handle everything from cloud
-            migration to AI copilots & agents, with full compliance and speed.
+            JNC Tech simplifies the journey. We act as your dedicated tech partner — modernizing your infra, integrating your systems, and unlocking AI use cases like MedCopilot — without disrupting care or burning budgets.
           </p>
         </div>
       </div>
-      
+
       {/* Bottom border */}
       <div className="w-full h-px bg-gray-200 mt-16"></div>
     </div>

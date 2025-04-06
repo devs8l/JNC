@@ -30,11 +30,11 @@ const ServiceHero = () => {
         </div>
         
         {/* Right image */}
-        <div className="w-full md:w-[60%] md:h-[45vh]">
+        <div className="w-full md:w-[60%] md:h-[60vh] ">
           <img 
             src="/ser-hero.png" 
             alt="Mother and child smiling together"
-            className="w-full h-full md:rounded-lg object-cover shadow-md object-[60%_10%] ]"
+            className="w-full h-full md:rounded-2xl object-cover shadow-md object-[60%_10%] ]"
           />
         </div>
       </div>

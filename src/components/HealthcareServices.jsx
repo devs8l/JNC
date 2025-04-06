@@ -138,7 +138,7 @@ const HealthcareCard = ({ card, index }) => {
   );
 };
 
-const HealthcareServices = () => {
+const HealthCareServices = () => {
   const containerRef = useRef(null);
   const sectionRef = useRef(null);
   const navRef = useRef(null);
@@ -385,4 +385,4 @@ const HealthcareServices = () => {
   );
 };
 
-export default HealthcareServices;
+export default HealthCareServices;
