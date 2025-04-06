@@ -10,11 +10,11 @@ const MobileCard = ({ card, isOpen, onClick }) => {
     <div className="mb-4 md:hidden">
       <div
         className={`rounded-xl overflow-hidden text-white p-6 ${isOpen ? 'min-h-[400px]' : 'h-16'}`}
-        style={{ backgroundColor: isOpen?card.bg:'#FAFAFA'}}
+        style={{ backgroundColor: isOpen ? card.bg : '#FAFAFA' }}
       >
         <div className="flex flex-col h-full">
           <div className="flex justify-between items-start">
-            <h2 className={`${isOpen?'text-2xl':'text-sm text-black'} font-medium`}>{card.title}</h2>
+            <h2 className={`${isOpen ? 'text-2xl' : 'text-sm text-black'} font-medium`}>{card.title}</h2>
             <button
               onClick={onClick}
               className="p-2 rounded-full  bg-opacity-20"
@@ -30,7 +30,7 @@ const MobileCard = ({ card, isOpen, onClick }) => {
               </svg>
             </button>
           </div>
-          
+
           {isOpen ? (
             <>
               <div className="mt-4">
@@ -68,7 +68,7 @@ const MobileCard = ({ card, isOpen, onClick }) => {
 const HealthcareCard = ({ card, index }) => {
   return (
     <div
-      className={`hidden md:block rounded-xl overflow-hidden text-white p-6 md:p-20 my-10 sticky top-5 md:top-40`}
+      className={`hidden w-[80%] m-auto md:block rounded-xl overflow-hidden text-white p-6 md:p-20 my-10 sticky top-5 md:top-40`}
       style={{
         backgroundColor: card.bg,
         zIndex: card.z,
@@ -81,20 +81,46 @@ const HealthcareCard = ({ card, index }) => {
           <h2 className="text-2xl md:text-3xl font-medium mb-4">
             {card.title}
           </h2>
-          <p className="mb-6 text-sm w-[70%] md:text-base">
-            {card.description}
-          </p>
+          <p
+            className="mb-6 text-sm w-[70%] md:text-base"
+            dangerouslySetInnerHTML={{ __html: card.description }}
+          />
           <div className="mt-6">
             <p className="font-medium mb-4">
               {card.actionVerb}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {card.features.map((feature, idx) => (
-                <div key={idx} className="flex items-center space-x-3">
-                  <img src={feature.icon} alt="" className="w-5 h-5" />
-                  <span className="text-sm">{feature.text}</span>
-                </div>
-              ))}
+            <div className="flex flex-col gap-7 w-[70%]">
+              {/* First row with 2 features */}
+              <div className="grid grid-cols-2 gap-7">
+                {card.features.slice(0, 2).map((feature, idx) => (
+                  <div key={idx} className="flex items-center flex-col gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <img
+                        src={feature.icon}
+                        alt=""
+                        className="w-7 h-7 object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-center w-[70%]">{feature.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Second row with 3 features */}
+              <div className="grid grid-cols-3 gap-7">
+                {card.features.slice(2, 5).map((feature, idx) => (
+                  <div key={idx + 2} className="flex items-center flex-col gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      <img
+                        src={feature.icon}
+                        alt=""
+                        className="w-7 h-7 object-contain"
+                      />
+                    </div>
+                    <span className="text-sm text-center">{feature.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -169,7 +195,7 @@ const HealthcareServices = () => {
     },
     {
       title: "Security & Compliance Setup",
-      description: "Healthcare data is a goldmine — and a liability. We make sure you're always protected and audit-ready.",
+      description: "Healthcare data is a goldmine — and a liability.<br> We make sure you're always protected and audit-ready.",
       image: "/stack-3.png",
       features: [
         { text: "Full HIPAA compliance architecture", icon: "/s-1.svg" },
@@ -184,14 +210,14 @@ const HealthcareServices = () => {
     },
     {
       title: "AI Readiness + MedCopilot Integration",
-      description: "Once your data is structured and compliant, we plug in intelligence. MedCopilot becomes your doctor's assistant — and your operations brain.",
+      description: "Once your data is structured and compliant,we plug in intelligence. MedCopilot becomes your doctor's assistant — and your operations brain.",
       image: "/stack-5.png",
       features: [
         { text: "Auto-generated summaries from patient history", icon: "/ai-1.svg" },
+        { text: "Infra for future AI use cases (chatbots, analytics, automation)", icon: "/ai-4.svg" },
+        { text: "Works with Cerner, Epic, Practo, and any existing EMR", icon: "/ai-5.svg" },
         { text: "Risk prediction dashboards before every visit", icon: "/ai-2.svg" },
         { text: "Smart note-taking tools for doctors", icon: "/ai-3.svg" },
-        { text: "Infra for future AI use cases (chatbots, analytics, automation)", icon: "/ai-4.svg" },
-        { text: "Works with Cerner, Epic, Practo, and any existing EMR", icon: "/ai-5.svg" }
       ],
       actionVerb: "Features unlocked:",
       bg: "#BF80A9",
@@ -326,7 +352,7 @@ const HealthcareServices = () => {
                 {cards.map((card, index) => (
                   <button
                     key={index}
-                    className={`whitespace-nowrap px-3 py-2 text-sm rounded-full font-medium transition-colors ${activeTab === index ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+                    className={`whitespace-nowrap px-3 py-2 text-sm rounded-full font-medium transition-colors ${activeTab === index ? 'bg-blue-500 text-white' : ' text-white '}`}
                   >
                     {card.title}
                   </button>
