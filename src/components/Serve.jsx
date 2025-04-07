@@ -26,10 +26,7 @@ const Serve = () => {
             {/* Headings */}
             <div className="mb-4 md:mb-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-2">
-                We Work With Healthcare Teams
-              </h2>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl text-blue-500">
-                Who Want to Innovate
+                We Work With Healthcare Teams  <span className="text-3xl md:text-4xl lg:text-5xl text-blue-500">Who Want to Innovate</span>
               </h2>
             </div>
 
