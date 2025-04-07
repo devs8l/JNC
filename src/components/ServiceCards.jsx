@@ -89,7 +89,7 @@ const HealthcareCard = ({ card, index }) => {
             <p className="font-medium mb-4">
               {card.actionVerb}
             </p>
-            <div className="flex flex-col gap-7 w-[70%]">
+            <div className="flex flex-col gap-7 w-[80%]">
               {/* First row with 2 features */}
               <div className="grid grid-cols-2 gap-7">
                 {card.features.slice(0, 2).map((feature, idx) => (
@@ -101,7 +101,7 @@ const HealthcareCard = ({ card, index }) => {
                         className="w-7 h-7 object-contain"
                       />
                     </div>
-                    <span className="text-sm text-center w-[80%]">{feature.text}</span>
+                    <span className="text-sm text-center w-[85%]">{feature.text}</span>
                   </div>
                 ))}
               </div>
