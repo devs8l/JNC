@@ -86,9 +86,9 @@ const HealthcareCard = ({ card, index }) => {
             dangerouslySetInnerHTML={{ __html: card.description }}
           />
           <div className="mt-6">
-            <p className="font-medium mb-4">
+            {/* <p className="font-medium mb-4">
               {card.actionVerb}
-            </p>
+            </p> */}
             <div className="flex flex-col gap-7 w-[80%]">
               {/* First row with 2 features */}
               <div className="grid grid-cols-2 gap-7">
