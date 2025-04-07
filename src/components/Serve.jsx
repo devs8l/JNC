@@ -29,7 +29,7 @@ const Serve = () => {
                 We Work With Healthcare Teams
               </h2>
               <h2 className="text-3xl md:text-4xl lg:text-5xl text-blue-500">
-                Who Want to Move Fast.
+                Who Want to Innovate
               </h2>
             </div>
 

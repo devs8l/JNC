@@ -17,7 +17,7 @@ const CompanyValue = () => {
             Making Hospitals Ready to Deliver
           </h2>
           <h2 className="text-3xl md:text-4xl lg:text-5xl ">
-            Better, Faster <span className="text-blue-500">Care</span>.
+            Better, Faster <span className="text-blue-500">Care</span>
           </h2>
         </div>
 

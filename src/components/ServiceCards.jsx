@@ -101,7 +101,7 @@ const HealthcareCard = ({ card, index }) => {
                         className="w-7 h-7 object-contain"
                       />
                     </div>
-                    <span className="text-sm text-center w-[70%]">{feature.text}</span>
+                    <span className="text-sm text-center w-[80%]">{feature.text}</span>
                   </div>
                 ))}
               </div>
@@ -336,7 +336,7 @@ const ServiceCards = () => {
             The Seamless Healthcare Stack:
           </h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-            <span className="text-blue-400">Everything You Need.</span> <span className="header-text text-black">Nothing You Don't.</span>
+            <span className="text-blue-400">Everything You Need.</span>
           </h2>
           <p className="max-w-4xl md:text-xl header-text">
             We've distilled the chaos of digital transformation into 5 essential services. No
