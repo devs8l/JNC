@@ -23,8 +23,8 @@ const ProcessFlow = () => {
       <div className="hidden md:flex justify-between items-start mb-16 relative">
         {/* Step 1 */}
         <div className="flex flex-col items-center w-1/5 z-10">
-          <div className="bg-blue-400 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4">
-            <CheckCircle size={24} />
+          <div className="bg-blue-400 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4 group">
+            <CheckCircle size={24} className='group-hover:scale-[1.1] transition-all duration-150 ease-in' />
           </div>
           <p className="text-center text-gray-800">
             <span className="block font-medium">Free System</span>
@@ -34,8 +34,8 @@ const ProcessFlow = () => {
 
         {/* Step 2 */}
         <div className="flex flex-col items-center w-1/5 z-10">
-          <div className="bg-blue-400 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4">
-            <FileText size={24} />
+          <div className="bg-blue-400 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4 group">
+            <FileText size={24} className='group-hover:scale-[1.1] transition-all duration-150 ease-in' />
           </div>
           <p className="text-center text-gray-800">
             <span className="block font-medium">Tailored</span>
@@ -45,8 +45,8 @@ const ProcessFlow = () => {
 
         {/* Step 3 */}
         <div className="flex flex-col items-center w-1/5 z-10">
-          <div className="bg-blue-500 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4">
-            <Zap size={24} />
+          <div className="bg-blue-500 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4 group">
+            <Zap size={24} className='group-hover:scale-[1.1] transition-all duration-150 ease-in' />
           </div>
           <p className="text-center text-gray-800">
             <span className="block font-medium">Rapid Implementation</span>
@@ -56,8 +56,8 @@ const ProcessFlow = () => {
 
         {/* Step 4 */}
         <div className="flex flex-col items-center w-1/5 z-10">
-          <div className="bg-blue-500 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4">
-            <TrendingUp size={24} />
+          <div className="bg-blue-500 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4 group">
+            <TrendingUp size={24} className='group-hover:scale-[1.1] transition-all duration-150 ease-in' />
           </div>
           <p className="text-center text-gray-800">
             <span className="block font-medium">Track Results (speed,</span>
@@ -67,8 +67,8 @@ const ProcessFlow = () => {
 
         {/* Step 5 */}
         <div className="flex flex-col items-center w-1/5 z-10">
-          <div className="bg-blue-600 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4">
-            <Sparkles size={24} />
+          <div className="bg-blue-600 rounded-full h-16 w-16 flex items-center justify-center text-white mb-4 group">
+            <Sparkles size={24} className='group-hover:scale-[1.1] transition-all duration-150 ease-in' />
           </div>
           <p className="text-center text-gray-800">
             <span className="block font-medium">Scale with AI,</span>
