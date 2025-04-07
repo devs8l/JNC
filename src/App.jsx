@@ -7,6 +7,8 @@ import Med from './pages/Med'; // Import your Med component
 import Footer from './components/Footer';
 import TallyForm from './components/TallyForm';
 import Services from './pages/Services';
+import BlogPage from './pages/BlogPage';
+import BlogDetail from './pages/BlogDetail';
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +32,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/medcopilot" element={<Med />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/blogs/:id" element={<BlogDetail />} />
         </Routes>
         <Footer />
       </div>

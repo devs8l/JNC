@@ -346,7 +346,7 @@ const ServiceCards = () => {
 
         {/* Desktop Navigation Tabs */}
         {!isMobileCardOpen && (
-          <div ref={navRef} className="hidden md:block sticky top-0 z-[10] bg-[transparent] nav-div">
+          <div ref={navRef} className="hidden md:block sticky top-0 z-[10] bg-[transparent] nav-div w-[90%] mx-auto">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-wrap justify-center gap-2 py-4">
                 {cards.map((card, index) => (

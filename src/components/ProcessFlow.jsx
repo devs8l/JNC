@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircle, FileText, Zap, TrendingUp, Sparkles } from 'lucide-react';
 
 const ProcessFlow = () => {
+  const formId = 'w2oQAM'; // Your Tally form ID
+
+  // Load Tally script
+  useEffect(() => {
+    if (!window.Tally) {
+      const script = document.createElement('script');
+      script.src = 'https://tally.so/widgets/embed.js';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  }, []);
+  const openContactForm = () => {
+    if (window.Tally) {
+      window.Tally.openPopup(formId, {
+        layout: 'modal',
+        width: 700,
+        overlay: true,
+        hideTitle: true,
+        autoClose: 3000,
+        onSubmit: (payload) => {
+          console.log('Form submitted:', payload);
+          // Handle form submission here
+        },
+        onOpen: () => console.log('Form opened'),
+        onClose: () => console.log('Form closed')
+      });
+    } else {
+      console.error('Tally script not loaded yet');
+    }
+  };
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12">
       {/* Top border line */}
@@ -144,7 +174,7 @@ const ProcessFlow = () => {
 
       {/* CTA Button */}
       <div className="flex justify-center">
-        <button className="border border-blue-500 text-blue-500 px-6 py-3 rounded-lg font-medium w-full md:w-auto md:min-w-48 mx-auto">
+        <button onClick={openContactForm} className="border border-blue-500 text-blue-500 px-6 py-3 cursor-pointer rounded-lg font-medium w-full md:w-auto md:min-w-48 mx-auto">
           Book Your Free Audit
         </button>
       </div>

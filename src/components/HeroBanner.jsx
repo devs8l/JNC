@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-const HeroBanner = ({heading,cta,video}) => {
-  const formId = 'wA9vdy'; // Your Tally form ID
+const HeroBanner = ({heading,cta,video,formId}) => {
+  // const formId = 'wA9vdy'; // Your Tally form ID
 
   // Load Tally script
   useEffect(() => {
@@ -55,7 +55,7 @@ const HeroBanner = ({heading,cta,video}) => {
           {heading}
         </h2>
 
-        <button onClick={openContactForm} className='bg-primary rounded-sm text-white px-6 py-2 z-1'>
+        <button onClick={openContactForm} className='bg-primary rounded-sm text-white px-6 py-2 z-1 cursor-pointer'>
           {cta}
         </button>
       </div>
