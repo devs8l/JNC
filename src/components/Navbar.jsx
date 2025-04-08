@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const formId = 'wA9vdy'; // Your Tally form ID
+  const location = useLocation();
 
   // Load Tally script
   useEffect(() => {
@@ -17,7 +19,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
 
   const openContactForm = () => {
     if (window.Tally) {
@@ -39,9 +40,14 @@ const Navbar = () => {
     }
   };
 
+  // Function to check if current path matches the link
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
-    <nav className="w-full bg-white py-1 px-6 sm:px-15 ">
-      <div className=" mx-auto flex items-center justify-between">
+    <nav className="w-full bg-white py-1 px-6 sm:px-15">
+      <div className="mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="text-blue-500 font-bold text-3xl mr-5">
           <img src="/jnc.svg" className='w-20 h-20' alt="" />
@@ -49,10 +55,24 @@ const Navbar = () => {
 
         {/* Desktop Navigation - Middle Links */}
         <div className="hidden md:flex items-center space-x-8 ml-15">
-          <a href="/" className="text-gray-800 font-medium text-md hover:text-primary">Home</a>
-          <a href="/medcopilot" className="text-gray-800 font-medium text-md hover:text-primary">MedCopilot</a>
-          <a href="/services" className="text-gray-800 font-medium text-md hover:text-primary">Services</a>
-          {/* <a href="/blogs" className="text-gray-800 font-medium text-md hover:text-primary">Blog</a> */}
+          <a 
+            href="/" 
+            className={`text-gray-800 font-medium text-md hover:text-primary ${isActive('/') ? 'text-primary' : ''}`}
+          >
+            Home
+          </a>
+          <a 
+            href="/medcopilot" 
+            className={`text-gray-800 font-medium text-md hover:text-primary ${isActive('/medcopilot') ? 'text-primary' : ''}`}
+          >
+            MedCopilot
+          </a>
+          <a 
+            href="/services" 
+            className={`text-gray-800 font-medium text-md hover:text-primary ${isActive('/services') ? 'text-primary' : ''}`}
+          >
+            Services
+          </a>
         </div>
 
         {/* Empty space to push Contact Us to far right */}
@@ -60,7 +80,7 @@ const Navbar = () => {
 
         {/* Contact Us Button */}
         <div className="hidden md:block">
-          <button onClick={openContactForm} className="bg-primary rounded-sm text-white px-6 py-2  text-sm font-medium">
+          <button onClick={openContactForm} className="bg-primary rounded-sm text-white px-6 py-2 text-sm font-medium">
             Contact Us
           </button>
         </div>
@@ -92,11 +112,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4 px-2">
           <div className="flex flex-col space-y-4 pt-2 pb-3">
-            <a href="/" className="text-gray-800 font-medium text-sm block py-2">Home</a>
-            <a href="/medcopilot" className="text-gray-800 font-medium text-sm block py-2">MedCopilot</a>
-            <a href="/services" className="text-gray-800 font-medium text-sm block py-2">Services</a>
-            {/* <a href="/blogs" className="text-gray-800 font-medium text-sm block py-2">Blog</a> */}
-            <button onClick={openContactForm} className="bg-primary rounded-sm  text-white px-4 py-2  text-sm font-medium w-1/3 mt-2">
+            <a 
+              href="/" 
+              className={`text-gray-800 font-medium text-sm block py-2 ${isActive('/') ? 'text-primary' : ''}`}
+            >
+              Home
+            </a>
+            <a 
+              href="/medcopilot" 
+              className={`text-gray-800 font-medium text-sm block py-2 ${isActive('/medcopilot') ? 'text-primary' : ''}`}
+            >
+              MedCopilot
+            </a>
+            <a 
+              href="/services" 
+              className={`text-gray-800 font-medium text-sm block py-2 ${isActive('/services') ? 'text-primary' : ''}`}
+            >
+              Services
+            </a>
+            <button onClick={openContactForm} className="bg-primary rounded-sm text-white px-4 py-2 text-sm font-medium w-1/3 mt-2">
               Contact Us
             </button>
           </div>
