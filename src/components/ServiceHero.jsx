@@ -50,10 +50,10 @@ const ServiceHero = ({ onLearnMoreClick }) => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <button onClick={openContactForm} className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-sm font-medium transition-colors">
+            <button onClick={openContactForm} className="bg-blue-500 cursor-pointer hover:bg-blue-600 text-white px-8 py-3 rounded-sm font-medium transition-colors">
               Book a Free System Audit
             </button>
-            <button onClick={onLearnMoreClick}  className="border border-blue-600 hover:border-gray-400 text-blue-500 px-20 py-3 rounded-sm font-medium transition-colors">
+            <button onClick={onLearnMoreClick}  className="border cursor-pointer border-blue-600 hover:border-gray-400 text-blue-500 px-20 py-3 rounded-sm font-medium transition-colors">
               Learn More
             </button>
           </div>

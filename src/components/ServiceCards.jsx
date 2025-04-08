@@ -150,7 +150,7 @@ const ServiceCards = () => {
   const cards = [
     {
       title: "Cloud Modernization & Data Migration",
-      description: "Hospitals shouldn't be running on legacy servers and patchy backups. We migrate your data and workflows to cloud-native systems that are secure, scalable, and compliant.",
+      description: "Whether you're a clinic or a hospital, we plug into your existing workflow and modernize what matters most",
       image: "/stack-1.png",
       features: [
         { text: "Lift-and-shift from legacy to GCP / AWS / Azure", icon: "/c-1.svg" },
@@ -180,7 +180,7 @@ const ServiceCards = () => {
     },
     {
       title: "Application Modernization",
-      description: "Still using clunky, outdated EMRs or hospital software? We either rebuild or wrap modern interfaces around them — without interrupting your work.",
+      description: "We transform legacy EMRs into fast, user-friendly tools — without changing your existing workflows.",
       image: "/stack-4.png",
       features: [
         { text: "Legacy EMRs or hospital management tools", icon: "/ap-1.svg" },
@@ -333,10 +333,10 @@ const ServiceCards = () => {
             Our Healthcare Tech Stack
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl mb-2 header-title">
-            The Seamless Healthcare Stack:
+            The Seamless Healthcare Stack
           </h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-            <span className="text-blue-400">Everything You Need.</span>
+            <span className="text-blue-400">Everything You Need</span>
           </h2>
           <p className="max-w-4xl md:text-xl header-text">
             We've distilled the chaos of digital transformation into 5 essential services. No
